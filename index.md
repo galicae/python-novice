@@ -4,10 +4,13 @@ site: sandpaper::sandpaper_site
 ---
 
 This lesson is an introduction to programming in Python 3 for people with little or no previous
-programming experience. It uses plotting as its motivating example and is designed to be used in
-both [Data Carpentry][dc-lessons] and [Software Carpentry][swc-lessons] workshops.
-This lesson references [JupyterLab][jupyterlab] but can be taught using alternative Python 3 interpreters
-as well (e.g., repl.it, Anaconda).
+programming experience.
+
+This course is an adaptation of the Python course developed and used by The Carpentries (Copyright
+(c) The Carpentries, <https://carpentries.org/>), licensed under [CC BY
+4.0][https://creativecommons.org/licenses/by/4.0/legalcode], and changed to suit my needs. This fork
+and its intended use (teaching material for Masters level Biology students) are in no way endorsed
+by the licensor.
 
 ::::::::::::::::::::::::::::::::::::::::::  prereq
 
@@ -19,9 +22,6 @@ as well (e.g., repl.it, Anaconda).
 
 2. Learners must install Python 3 before the class starts.
 
-3. Learners must get the gapminder data before class starts:
-  please download and unzip the file
-  [python-novice-gapminder-data.zip](episodes/files/python-novice-gapminder-data.zip).
 
 Please see [the setup instructions](learners/setup.md)
 for more details.
@@ -29,3 +29,8 @@ for more details.
 ::::::::::::::::::::::::::::::::::::::::::::::::::
 
 
+[cc-by-human]: https://creativecommons.org/licenses/by/4.0/
+[cc-by-legal]: https://creativecommons.org/licenses/by/4.0/legalcode
+[mit-license]: https://opensource.org/licenses/mit-license.html
+[carpentries]: https://carpentries.org
+[osi]: https://opensource.org
