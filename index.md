@@ -16,15 +16,13 @@ by the licensor.
 
 ## Prerequisites
 
-1. Learners need to understand what files and directories are,
-  what a working directory is,
-  and how to start a Python interpreter.
+1. Learners need to understand what files and directories are, what a working directory is, and how
+  to start a Python interpreter.
 
 2. Learners must install Python 3 before the class starts.
 
 
-Please see [the setup instructions](learners/setup.md)
-for more details.
+Please see [the setup instructions](learners/setup.md) for more details.
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
 
