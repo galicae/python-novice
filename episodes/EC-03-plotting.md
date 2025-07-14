@@ -1,5 +1,5 @@
 ---
-title: Plotting
+title: EXTRA - Plotting
 teaching: 15
 exercises: 15
 ---

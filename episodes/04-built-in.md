@@ -479,4 +479,14 @@ unnecessary at the moment, but others are very simple and useful.
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
 
+:::::::::::::::::::::::::::::::::::::::  challenge
 
+## Reflection exercise
+
+Reflect on and discuss the following:
+
+- What are the different kinds of errors Python will report?
+- Did the code always produce the results you expected? If not, why?
+- Is there something we can do to prevent errors when we write code?
+
+::::::::::::::::::::::::::::::::::::::::::::::::::
