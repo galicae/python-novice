@@ -141,7 +141,7 @@ I know...
 - Final: extract data from Pandas dataframe
   and create comparative multi-line time series plot.
 
-### [Running and Quitting Interactively](../episodes/01-run-quit.md) (9:00)
+### [Running and Quitting Interactively](../episodes/01-run-quit.md)
 
 - Teaching: 15 min (because setup issues)
   - Launch the Jupyter Notebook, create new notebooks, and exit the Notebook.
@@ -153,7 +153,7 @@ I know...
   - Change an existing cell from code to Markdown
   - Rendering LaTeX-style equations
 
-### [Variables and Assignment](../episodes/02-variables.md) (9:15)
+### [Variables and Assignment](../episodes/02-variables.md)
 
 - Teaching: 10 min
   - Write programs that assign scalar values to variables and perform calculations with those values.
@@ -165,7 +165,7 @@ I know...
   - Which is a better variable name, `m`, `min`, or `minutes`?
   - What do the following slice expressions produce?
 
-### [Data Types and Type Conversion](../episodes/03-types-conversion.md) (09:35)
+### [Data Types and Type Conversion](../episodes/03-types-conversion.md)
 
 - Teaching: 10 min
   - Explain key differences between integers and floating point numbers.
@@ -183,7 +183,7 @@ I know...
   - Given these float, int, and string values, which expressions will print a particular result?
   - What do you expect `1+2j + 3` to produce?
 
-### [Built-in Functions and Help](../episodes/04-built-in.md) (09:55)
+### [Built-in Functions and Help](../episodes/04-built-in.md)
 
 - Teaching: 15 min
   - Explain the purpose of functions.
@@ -198,7 +198,7 @@ I know...
   - Given what we have seen so far,
     what index expression will get the last character in a string?
 
-### [Libraries](../episodes/05-libraries.md) (10:35)
+### [Libraries](../episodes/05-libraries.md)
 
 - Teaching: 10 min
   - Explain what software libraries are and why programmers create and use them.
@@ -210,7 +210,7 @@ I know...
   - If `help(math)` produces an error, what have you forgotten to do?
   - Fill in the blanks in code below so that the import statement and program run.
 
-### [Lists](../episodes/06-lists.md) (13:00)
+### [Lists](../episodes/06-lists.md)
 
 - Teaching: 10 min
   - Explain why programs need collections of values.
@@ -224,7 +224,7 @@ I know...
   - What are the differences between sorting these two ways?
   - What is the difference between `new = old` and `new = old[:]`?
 
-### [Loops](../episodes/07-for-loops.md) (13:20)
+### [Loops](../episodes/07-for-loops.md)
 
 - Teaching: 10 min
   - Explain what for loops are normally used for.
@@ -237,7 +237,7 @@ I know...
   - Fill in the blanks in this series of examples to get practice accumulating values.
   - Reorder and indent these lines to calculate the cumulative sum of the list values.
 
-### [Conditionals](../episodes/08-conditionals.md) (15:00)
+### [Conditionals](../episodes/08-conditionals.md)
 
 - Teaching: 10 min
   - Correctly write programs that use if and else statements and simple Boolean expressions (without logical operators).
@@ -249,7 +249,7 @@ I know...
   - Modify this program so that it always finds the largest and smallest values in a list
     no matter what the list's values are.
 
-### [Writing Functions](../episodes/09-writing-functions.md) (14:00)
+### [Writing Functions](../episodes/09-writing-functions.md)
 
 - Teaching: 10 min
   - Explain and identify the difference between function definition and function call.
@@ -263,7 +263,7 @@ I know...
   - Why is it sometimes useful to pass arguments by naming the corresponding parameters?
   - Fill in the blanks and turn this short piece of code into a function.
 
-### [Variable Scope](../episodes/10-scope.md) (14:25)
+### [Variable Scope](../episodes/10-scope.md)
 
 - Teaching: 10 min
   - Identify local and global variables.
@@ -273,7 +273,7 @@ I know...
   - Trace the changes to the values in this program,
     being careful to distinguish local from global values.
 
-### [Programming Style](../episodes/11-style.md) (15:25)
+### [Programming Style](../episodes/11-style.md)
 
 - Teaching: 15 min
   - How can I make my programs more readable?
@@ -289,7 +289,7 @@ I know...
 The following were part of the original course, but deviate from the focus of this course
 (algorithmic thought, problem solving), so they were shunted off to the side.
 
-### [Reading Tabular Data](../episodes/EC-01-reading-tabular.md) (10:55)
+### [Reading Tabular Data](../episodes/EC-01-reading-tabular.md)
 
 - Teaching: 10 min
   - Import the Pandas library.
@@ -301,7 +301,7 @@ The following were part of the original course, but deviate from the focus of th
   - What string(s) should you pass to `read_csv` to read files from other directories?
   - How can you *write* CSV data?
 
-### [DataFrames](../episodes/EC-02-data-frames.md) (11:15)
+### [DataFrames](../episodes/EC-02-data-frames.md)
 
 - Teaching: 15 min
   - Select individual values from a Pandas dataframe.
@@ -320,7 +320,7 @@ The following were part of the original course, but deviate from the focus of th
     what would you do if asked to create a table of GDP per capita for Poland
     for the Twentieth Century?
 
-### [Plotting](../episodes/EC-03-plotting.md) (11:45)
+### [Plotting](../episodes/EC-03-plotting.md)
 
 - Teaching: 15 min
   - Create a time series plot showing a single data set.
@@ -330,7 +330,7 @@ The following were part of the original course, but deviate from the focus of th
   - Modify the example to create a scatter plot of GDP per capita in Asian countries.
   - Explain what each argument to `plot` does in the following example.
 
-### [Looping Over Data Sets](../episodes/EC-04-looping-data-sets.md) (13:45)
+### [Looping Over Data Sets](../episodes/EC-04-looping-data-sets.md)
 
 - Teaching: 5 min
   - Be able to read and write globbing expressions that match sets of files.
