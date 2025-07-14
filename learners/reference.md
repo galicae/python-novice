@@ -53,7 +53,7 @@ title: 'Reference'
   - `help()` displays documentation for the function in the parenthesis.
     - Other ways to get help include holding down `shift` and pressing `tab` in Jupyter Notebooks.
 
-## [Libraries](episodes/06-libraries.md)
+## [Libraries](episodes/05-libraries.md)
 
 - Importing a library:
   - Use `import ...` to load a library.
@@ -65,7 +65,7 @@ title: 'Reference'
   - Example of referring to an item with the module's name: `math.cos(math.pi)`.
 - Importing the plotting library as an alias: `import matplotlib as mpl`
 
-## [Reading Tabular Data into DataFrames](episodes/07-reading-tabular.md)
+## [Reading Tabular Data into DataFrames](episodes/06-reading-tabular.md)
 
 - Use the pandas library to do statistics on tabular data. Load with `import pandas as pd`.
   - To read in a csv: `pd.read_csv()`, including the path name in the parenthesis.
@@ -75,7 +75,7 @@ title: 'Reference'
 - Use `DataFrame.T` to transpose a DataFrame.
 - Use `DataFrame.describe` to get summary statistics about your data.
 
-## [Pandas DataFrames](episodes/08-data-frames.md)
+## [Pandas DataFrames](episodes/07-data-frames.md)
 
 - Select data using `[i,j]`
   - To select by entry position: `DataFrame.iloc[..., ...]`
@@ -89,7 +89,7 @@ title: 'Reference'
   - We can then use this to select values.
 - To use a select-apply-combine operation we use `data.apply(lambda x: x > x.mean())` where `mean()` can be any operation the user would like to be applied to x.
 
-## [Plotting](episodes/09-plotting.md)
+## [Plotting](episodes/08-plotting.md)
 
 - The most widely used plotting library is `matplotlib`.
   - Usually imported using `import matplotlib.pyplot as plt`.
@@ -108,7 +108,7 @@ plt.ylabel('y axis label')
 plt.legend()
 ```
 
-## [Lists](episodes/11-lists.md)
+## [Lists](episodes/09-lists.md)
 
 - Defined within `[...]` and separated by `,`.
   - An empty list can be created by using `[]`.
@@ -119,7 +119,7 @@ plt.legend()
 - To combine two lists use `list_name_1.extend(list_name_2)`.
 - To remove an item from a list use `del list_name[index]`.
 
-## [For Loops](episodes/12-for-loops.md)
+## [For Loops](episodes/10-for-loops.md)
 
 - Start a for loop with `for number in [1, 2, 3]:`, with the following lines indented.
   - `[1, 2, 3]` is considered the collection.
@@ -132,7 +132,7 @@ for number in range(0,5):
     print(number)
 ```
 
-## [Conditionals](episodes/13-conditionals.md)
+## [Conditionals](episodes/11-conditionals.md)
 
 - Defined similarly to a loop, using `if variable conditional value:`.
   - For example, `if variable > 5:`.
@@ -157,7 +157,7 @@ for m in [3, 6, 7, 2, 8]:
         print(m, 'is small')
 ```
 
-## [Looping Over Data Sets](episodes/14-looping-data-sets.md)
+## [Looping Over Data Sets](episodes/12-looping-data-sets.md)
 
 - Use a for loop: `for filename in [file1, file2]:`
 - To find a set of files using a pattern use `glob.glob`
@@ -172,7 +172,7 @@ for filename in glob.glob(*.txt):
   data = pd.read_csv(filename)
 ```
 
-## [Writing Functions](episodes/16-writing-functions.md)
+## [Writing Functions](episodes/13-writing-functions.md)
 
 - Define a function using `def function_name(parameters):`. Replace `parameters` with the variables to use when the function is executed.
 - Run by using `function_name(parameters)`.
@@ -186,12 +186,12 @@ def add_numbers(a, b):
 add_numbers(1, 4)
 ```
 
-## [Variable Scope](episodes/17-scope.md)
+## [Variable Scope](episodes/14-scope.md)
 
 - A local variable is defined in a function and can only be seen and used within that function.
 - A global variable is defined outside of a function and can be seen or used anywhere after definition.
 
-## [Programming Style](episodes/18-style.md)
+## [Programming Style](episodes/15-style.md)
 
 - Document your code.
 - Use clear and meaningful variable names.

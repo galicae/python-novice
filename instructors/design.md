@@ -198,9 +198,7 @@ I know...
   - Given what we have seen so far,
     what index expression will get the last character in a string?
 
-### [Coffee](../episodes/05-coffee.md): 15 min (10:20)
-
-### [Libraries](../episodes/06-libraries.md) (10:35)
+### [Libraries](../episodes/05-libraries.md) (10:35)
 
 - Teaching: 10 min
   - Explain what software libraries are and why programmers create and use them.
@@ -212,7 +210,7 @@ I know...
   - If `help(math)` produces an error, what have you forgotten to do?
   - Fill in the blanks in code below so that the import statement and program run.
 
-### [Reading Tabular Data](../episodes/07-reading-tabular.md) (10:55)
+### [Reading Tabular Data](../episodes/06-reading-tabular.md) (10:55)
 
 - Teaching: 10 min
   - Import the Pandas library.
@@ -224,7 +222,7 @@ I know...
   - What string(s) should you pass to `read_csv` to read files from other directories?
   - How can you *write* CSV data?
 
-### [DataFrames](../episodes/08-data-frames.md) (11:15)
+### [DataFrames](../episodes/07-data-frames.md) (11:15)
 
 - Teaching: 15 min
   - Select individual values from a Pandas dataframe.
@@ -243,7 +241,7 @@ I know...
     what would you do if asked to create a table of GDP per capita for Poland
     for the Twentieth Century?
 
-### [Plotting](../episodes/09-plotting.md) (11:45)
+### [Plotting](../episodes/08-plotting.md) (11:45)
 
 - Teaching: 15 min
   - Create a time series plot showing a single data set.
@@ -253,9 +251,7 @@ I know...
   - Modify the example to create a scatter plot of GDP per capita in Asian countries.
   - Explain what each argument to `plot` does in the following example.
 
-### [Lunch](../episodes/10-lunch.md) (12:15): 45 min
-
-### [Lists](../episodes/11-lists.md) (13:00)
+### [Lists](../episodes/09-lists.md) (13:00)
 
 - Teaching: 10 min
   - Explain why programs need collections of values.
@@ -269,7 +265,7 @@ I know...
   - What are the differences between sorting these two ways?
   - What is the difference between `new = old` and `new = old[:]`?
 
-### [Loops](../episodes/12-for-loops.md) (13:20)
+### [Loops](../episodes/10-for-loops.md) (13:20)
 
 - Teaching: 10 min
   - Explain what for loops are normally used for.
@@ -282,7 +278,19 @@ I know...
   - Fill in the blanks in this series of examples to get practice accumulating values.
   - Reorder and indent these lines to calculate the cumulative sum of the list values.
 
-### [Looping Over Data Sets](13-looping-data-sets) (13:45)
+### [Conditionals](11-conditionals) (15:00)
+
+- Teaching: 10 min
+  - Correctly write programs that use if and else statements and simple Boolean expressions (without logical operators).
+  - Trace the execution of unnested conditionals and conditionals inside loops.
+- Challenges: 15 min
+  - Trace the execution of this conditional statement.
+  - Fill in the blanks so that this function replaces negative values with zeroes.
+  - Modify this program so that it only processes files with fewer than 50 records.
+  - Modify this program so that it always finds the largest and smallest values in a list
+    no matter what the list's values are.
+
+### [Looping Over Data Sets](12-looping-data-sets) (13:45)
 
 - Teaching: 5 min
   - Be able to read and write globbing expressions that match sets of files.
@@ -293,7 +301,7 @@ I know...
   - Modify this program so that it prints the number of records in the shortest file.
   - Write a program that reads and plots all of the regional data sets.
 
-### [Writing Functions](14-writing-functions) (14:00)
+### [Writing Functions](13-writing-functions) (14:00)
 
 - Teaching: 10 min
   - Explain and identify the difference between function definition and function call.
@@ -307,7 +315,7 @@ I know...
   - Why is it sometimes useful to pass arguments by naming the corresponding parameters?
   - Fill in the blanks and turn this short piece of code into a function.
 
-### [Variable Scope](15-scope) (14:25)
+### [Variable Scope](14-scope) (14:25)
 
 - Teaching: 10 min
   - Identify local and global variables.
@@ -317,21 +325,8 @@ I know...
   - Trace the changes to the values in this program,
     being careful to distinguish local from global values.
 
-### [Coffee](16-coffee) (14:45): 15 min
 
-### [Conditionals](17-conditionals) (15:00)
-
-- Teaching: 10 min
-  - Correctly write programs that use if and else statements and simple Boolean expressions (without logical operators).
-  - Trace the execution of unnested conditionals and conditionals inside loops.
-- Challenges: 15 min
-  - Trace the execution of this conditional statement.
-  - Fill in the blanks so that this function replaces negative values with zeroes.
-  - Modify this program so that it only processes files with fewer than 50 records.
-  - Modify this program so that it always finds the largest and smallest values in a list
-    no matter what the list's values are.
-
-### [Programming Style](../episodes/18-style.md) (15:25)
+### [Programming Style](../episodes/15-style.md) (15:25)
 
 - Teaching: 15 min
   - How can I make my programs more readable?
@@ -342,19 +337,9 @@ I know...
   - Turn the comments in this program into docstrings.
   - Rewrite this short program to be more readable.
 
-### [Wrap-Up](../episodes/19-wrap.md) (15:55)
+### [Wrap-Up](../episodes/16-wrap.md) (15:55)
 
 - Teaching: 20 min
   - Name and locate scientific Python community sites for software, workshops, and help.
 - Challenges: 0 min
   - None.
-
-### [Feedback](../episodes/20-feedback.md) (16:15)
-
-- Teaching: 0 min
-- Challenges: 15 min
-  - Collect feedback
-
-### Finish (16:30)
-
-
