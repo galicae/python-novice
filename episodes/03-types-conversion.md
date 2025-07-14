@@ -19,7 +19,7 @@ exercises: 10
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
 
-## Every value has a type.
+## Every value has a type
 
 - Every value in a program has a specific type.
 - Integer (`int`): represents positive or negative whole numbers like 3 or -512.
@@ -28,7 +28,7 @@ exercises: 10
   - Written in either single quotes or double quotes (as long as they match).
   - The quote marks aren't printed when the string is displayed.
 
-## Use the built-in function `type` to find the type of a value.
+## Use the built-in function `type` to find the type of a value
 
 - Use the built-in function `type` to find out what type a value has.
 - Works on variables as well.
@@ -51,7 +51,7 @@ print(type(fitness))
 <class 'str'>
 ```
 
-## Types control what operations (or methods) can be performed on a given value.
+## Types control what operations (or methods) can be performed on a given value
 
 - A value's type determines what the program can do to it.
 
@@ -76,7 +76,7 @@ TypeError                                 Traceback (most recent call last)
 TypeError: unsupported operand type(s) for -: 'str' and 'str'
 ```
 
-## You can use the "+" and "\*" operators on strings.
+## You can use the "+" and "\*" operators on strings
 
 - "Adding" character strings concatenates them.
 
@@ -101,7 +101,7 @@ print(separator)
 ==========
 ```
 
-## Strings have a length (but numbers don't).
+## Strings have a length (but numbers don't)
 
 - The built-in function `len` counts the number of characters in a string.
 
@@ -158,7 +158,7 @@ print(str(1) + '2')
 12
 ```
 
-## Can mix integers and floats freely in operations.
+## Can mix integers and floats freely in operations
 
 - Integers and floating-point numbers can be mixed in arithmetic.
   - Python 3 automatically converts integers to floats as needed.
@@ -173,7 +173,7 @@ half is 0.5
 three squared is 9.0
 ```
 
-## Variables only change value when something is assigned to them.
+## Variables only change value when something is assigned to them
 
 - If we make one cell in a spreadsheet depend on another,
   and update the latter,

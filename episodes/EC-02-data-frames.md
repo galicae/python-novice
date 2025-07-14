@@ -40,7 +40,7 @@ Remember that a DataFrame provides an *index* as a way to identify the rows of t
 a row, then, has a *position* inside the table as well as a *label*, which
 uniquely identifies its *entry* in the DataFrame.
 
-## Use `DataFrame.iloc[..., ...]` to select values by their (entry) position
+## Use `DataFrame.iloc[..., ..]` to select values by their (entry) position
 
 - Can specify location by numerical index analogously to 2D version of character selection in strings.
 
@@ -54,7 +54,7 @@ print(data.iloc[0, 0])
 1601.056136
 ```
 
-## Use `DataFrame.loc[..., ...]` to select values by their (entry) label.
+## Use `DataFrame.loc[..., ...]` to select values by their (entry) label
 
 - Can specify location by row and/or column name.
 
@@ -66,7 +66,7 @@ print(data.loc["Albania", "gdpPercap_1952"])
 1601.056136
 ```
 
-## Use `:` on its own to mean all columns or all rows.
+## Use `:` on its own to mean all columns or all rows
 
 - Just like Python's usual slicing notation.
 
@@ -111,7 +111,7 @@ Name: gdpPercap_1952, dtype: float64
 - Would get the same result printing `data["gdpPercap_1952"]`
 - Also get the same result printing `data.gdpPercap_1952` (not recommended, because easily confused with `.` notation for methods)
 
-## Select multiple columns or rows using `DataFrame.loc` and a named slice.
+## Select multiple columns or rows using `DataFrame.loc` and a named slice
 
 ```python
 print(data.loc['Italy':'Poland', 'gdpPercap_1962':'gdpPercap_1972'])
@@ -131,7 +131,7 @@ In the above code, we discover that **slicing using `loc` is inclusive at both
 ends**, which differs from **slicing using `iloc`**, where slicing indicates
 everything up to but not including the final index.
 
-## Result of slicing can be used in further operations.
+## Result of slicing can be used in further operations
 
 - Usually don't just print a slice.
 - All the statistical operators that work on entire dataframes
@@ -160,7 +160,7 @@ gdpPercap_1972    7778.414017
 dtype: float64
 ```
 
-## Use comparisons to select data based on value.
+## Use comparisons to select data based on value
 
 - Comparison is applied element by element.
 - Returns a similarly-shaped dataframe of `True` and `False`.
@@ -194,7 +194,7 @@ Norway                True           True           True
 Poland               False          False          False
 ```
 
-## Select values or NaN using a Boolean mask.
+## Select values or NaN using a Boolean mask
 
 - A frame full of Booleans is sometimes called a *mask* because of how it can be used.
 

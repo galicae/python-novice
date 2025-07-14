@@ -1,3 +1,7 @@
+---
+title: Progress
+---
+
 # Progress tracker
 
 This is an internal document meant to help me keep track of changes I am making.

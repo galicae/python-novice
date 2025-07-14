@@ -18,7 +18,7 @@ exercises: 10
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
 
-## Use a `for` loop to process files given a list of their names.
+## Use a `for` loop to process files given a list of their names
 
 - A filename is a character string.
 - And lists can contain character strings.
@@ -51,7 +51,7 @@ gdpPercap_2007    944
 dtype: float64
 ```
 
-## Use [`glob.glob`](https://docs.python.org/3/library/glob.html#glob.glob) to find sets of files whose names match a pattern.
+## Use [`glob.glob`](https://docs.python.org/3/library/glob.html#glob.glob) to find sets of files whose names match a pattern
 
 - In Unix, the term "globbing" means "matching a set of files with a pattern".
 - The most common patterns are:
@@ -82,7 +82,7 @@ print('all PDB files:', glob.glob('*.pdb'))
 all PDB files: []
 ```
 
-## Use `glob` and `for` to process batches of files.
+## Use `glob` and `for` to process batches of files
 
 - Helps a lot if the files are named and stored systematically and consistently
   so that simple patterns will find the right data.

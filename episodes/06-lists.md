@@ -17,7 +17,7 @@ exercises: 10
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
 
-## A list stores many values in a single structure.
+## A list stores many values in a single structure
 
 - Doing calculations with a hundred variables called `pressure_001`, `pressure_002`, etc.,
   would be at least as slow as doing them by hand.
@@ -37,7 +37,7 @@ pressures: [0.273, 0.275, 0.277, 0.275, 0.276]
 length: 5
 ```
 
-## Use an item's index to fetch it from a list.
+## Use an item's index to fetch it from a list
 
 - Just like strings.
 
@@ -51,7 +51,7 @@ zeroth item of pressures: 0.273
 fourth item of pressures: 0.276
 ```
 
-## Lists' values can be replaced by assigning to them.
+## Lists' values can be replaced by assigning to them
 
 - Use an index expression on the left of assignment to replace a value.
 
@@ -64,7 +64,7 @@ print('pressures is now:', pressures)
 pressures is now: [0.265, 0.275, 0.277, 0.275, 0.276]
 ```
 
-## Appending items to a list lengthens it.
+## Appending items to a list lengthens it
 
 - Use `list_name.append` to add items to the end of a list.
 
@@ -108,7 +108,7 @@ Note that while `extend` maintains the "flat" structure of the list, appending a
 the last element in `primes` will itself be a list, not an integer. Lists can contain values of any
 type; therefore, lists of lists are possible.
 
-## Use `del` to remove items from a list entirely.
+## Use `del` to remove items from a list entirely
 
 - We use `del list_name[index]` to remove an element from a list (in the example, 9 is not a prime number) and thus shorten it.
 - `del` is not a function or a method, but a statement in the language.
@@ -125,14 +125,14 @@ primes before removing last item: [2, 3, 5, 7, 9]
 primes after removing last item: [2, 3, 5, 7]
 ```
 
-## The empty list contains no values.
+## The empty list contains no values
 
 - Use `[]` on its own to represent a list that doesn't contain any values.
   - "The zero of lists."
 - Helpful as a starting point for collecting values
   (which we will see in the [next episode](07-for-loops.md)).
 
-## Lists may contain values of different types.
+## Lists may contain values of different types
 
 - A single list may contain numbers, strings, and anything else.
 
@@ -140,7 +140,7 @@ primes after removing last item: [2, 3, 5, 7]
 goals = [1, 'Create lists.', 2, 'Extract items from lists.', 3, 'Modify lists.']
 ```
 
-## Character strings can be indexed like lists.
+## Character strings can be indexed like lists
 
 - Get single characters from a character string using indexes in square brackets.
 
@@ -155,7 +155,7 @@ zeroth character: c
 third character: b
 ```
 
-## Character strings are immutable.
+## Character strings are immutable
 
 - Cannot change the characters in a string after it has been created.
   - *Immutable*: can't be changed after creation.
@@ -173,7 +173,7 @@ TypeError: 'str' object does not support item assignment
 
 - Lists and character strings are both *collections*.
 
-## Indexing beyond the end of the collection is an error.
+## Indexing beyond the end of the collection is an error
 
 - Python reports an `IndexError` if we attempt to access a value that doesn't exist.
   - This is a kind of [runtime error](04-built-in.md).

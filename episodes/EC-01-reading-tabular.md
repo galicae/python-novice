@@ -26,7 +26,7 @@ To obtain it, download and unzip the file
 In order to follow the presented material, you should launch the JupyterLab
 server in the root directory (see [Starting JupyterLab](episodes/01-run-quit.md#starting-jupyterlab)).
 
-## Use the Pandas library to do statistics on tabular data.
+## Use the Pandas library to do statistics on tabular data
 
 - [Pandas](https://pandas.pydata.org/) is a widely-used Python library for statistics, particularly on tabular data.
 - Borrows many features from R's dataframes.
@@ -83,7 +83,7 @@ FileNotFoundError: [Errno 2] No such file or directory: 'data/gapminder_gdp_ocea
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
 
-## Use `index_col` to specify that a column's values should be used as row headings.
+## Use `index_col` to specify that a column's values should be used as row headings
 
 - Row headings are numbers (0 and 1 in this case).
 - Really want to index by country.
@@ -112,7 +112,7 @@ Australia       23424.76683     26997.93657     30687.75473     34435.36744
 New Zealand     18363.32494     21050.41377     23189.80135     25185.00911
 ```
 
-## Use the `DataFrame.info()` method to find out more about a dataframe.
+## Use the `DataFrame.info()` method to find out more about a dataframe
 
 ```python
 data_oceania_country.info()
@@ -144,7 +144,7 @@ memory usage: 208.0+ bytes
   - We will talk later about null values, which are used to represent missing observations.
 - Uses 208 bytes of memory.
 
-## The `DataFrame.columns` variable stores information about the dataframe's columns.
+## The `DataFrame.columns` variable stores information about the dataframe's columns
 
 - Note that this is data, *not* a method.  (It doesn't have parentheses.)
   - Like `math.pi`.
@@ -162,7 +162,7 @@ Index(['gdpPercap_1952', 'gdpPercap_1957', 'gdpPercap_1962', 'gdpPercap_1967',
       dtype='object')
 ```
 
-## Use `DataFrame.T` to transpose a dataframe.
+## Use `DataFrame.T` to transpose a dataframe
 
 - Sometimes want to treat columns as rows and vice versa.
 - Transpose (written `.T`) doesn't copy the data, just changes the program's view of it.
@@ -188,7 +188,7 @@ gdpPercap_2002  30687.75473  23189.80135
 gdpPercap_2007  34435.36744  25185.00911
 ```
 
-## Use `DataFrame.describe()` to get summary statistics about data.
+## Use `DataFrame.describe()` to get summary statistics about data
 
 `DataFrame.describe()` gets the summary statistics of only the columns that have numerical data.
 All other columns are ignored, unless you use the argument `include='all'`.

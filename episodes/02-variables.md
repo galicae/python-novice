@@ -17,7 +17,7 @@ exercises: 10
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
 
-## Use variables to store values.
+## Use variables to store values
 
 - **Variables** are names for values.
 
@@ -44,7 +44,7 @@ exercises: 10
   first_name = 'Ahmed'
   ```
 
-## Use `print` to display values.
+## Use `print` to display values
 
 - Python has a built-in function called `print` that prints things as text.
 - Call the function (i.e., tell Python to run it) by using its name.
@@ -63,7 +63,7 @@ Ahmed is 42 years old
 - `print` automatically puts a single space between items to separate them.
 - And wraps around to a new line at the end.
 
-## Variables must be created before they are used.
+## Variables must be created before they are used
 
 - If a variable doesn't exist yet, or if the name has been mis-spelled,
   Python reports an error. (Unlike some languages, which "guess" a default value.)
@@ -109,7 +109,7 @@ clears the interpreter and runs everything from a clean slate going top to botto
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
 
-## Variables can be used in calculations.
+## Variables can be used in calculations
 
 - We can use variables in calculations just as if they were values.
   - Remember, we assigned the value `42` to `age` a few lines ago.
@@ -123,7 +123,7 @@ print('Age in three years:', age)
 Age in three years: 45
 ```
 
-## Use an index to get a single character from a string.
+## Use an index to get a single character from a string
 
 - The characters (individual letters, numbers, and so on) in a string are
   ordered. For example, the string `'AB'` is not the same as `'BA'`. Because of
@@ -145,7 +145,7 @@ print(atom_name[0])
 h
 ```
 
-## Use a slice to get a substring.
+## Use a slice to get a substring
 
 - A part of a string is called a **substring**. A substring can be as short as a
   single character.
@@ -168,7 +168,7 @@ print(atom_name[0:3])
 sod
 ```
 
-## Use the built-in function `len` to find the length of a string.
+## Use the built-in function `len` to find the length of a string
 
 ```python
 print(len('helium'))
@@ -181,13 +181,13 @@ print(len('helium'))
 - Nested functions are evaluated from the inside out,
   like in mathematics.
 
-## Python is case-sensitive.
+## Python is case-sensitive
 
 - Python thinks that upper- and lower-case letters are different,
   so `Name` and `name` are different variables.
 - There are conventions for using upper-case letters at the start of variable names so we will use lower-case letters for now.
 
-## Use meaningful variable names.
+## Use meaningful variable names
 
 - Python doesn't care what you call variables as long as they obey the rules
   (alphanumeric characters and the underscore).

@@ -19,7 +19,7 @@ exercises: 10
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
 
-## The scope of a variable is the part of a program that can 'see' that variable.
+## The scope of a variable is the part of a program that can 'see' that variable
 
 - There are only so many sensible names for variables.
 - People using functions shouldn't have to worry about

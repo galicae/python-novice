@@ -18,7 +18,7 @@ exercises: 15
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
 
-## A *for loop* executes commands once for each value in a collection.
+## A *for loop* executes commands once for each value in a collection
 
 - Doing calculations on the values in a list one by one
   is as painful as working with `pressure_001`, `pressure_002`, etc.
@@ -48,7 +48,7 @@ print(5)
 5
 ```
 
-## A `for` loop is made up of a collection, a loop variable, and a body.
+## A `for` loop is made up of a collection, a loop variable, and a body
 
 ```python
 for number in [2, 3, 5]:
@@ -60,7 +60,7 @@ for number in [2, 3, 5]:
 - The loop variable, `number`, is what changes for each *iteration* of the loop.
   - The "current thing".
 
-## The first line of the `for` loop must end with a colon, and the body must be indented.
+## The first line of the `for` loop must end with a colon, and the body must be indented
 
 - The colon at the end of the first line signals the start of a *block* of statements.
 - Python uses indentation rather than `{}` or `begin`/`end` to show *nesting*.
@@ -92,7 +92,7 @@ IndentationError: unexpected indent
 - This error can be fixed by removing the extra spaces
   at the beginning of the second line.
 
-## Loop variables can be called anything.
+## Loop variables can be called anything
 
 - As with all variables, loop variables are:
   - Created on demand.
@@ -103,7 +103,7 @@ for kitten in [2, 3, 5]:
     print(kitten)
 ```
 
-## The body of a loop can contain many statements.
+## The body of a loop can contain many statements
 
 - But no loop should be more than a few lines long.
 - Hard for human beings to keep larger chunks of code in mind.
@@ -122,7 +122,7 @@ for p in primes:
 5 25 125
 ```
 
-## Use `range` to iterate over a sequence of numbers.
+## Use `range` to iterate over a sequence of numbers
 
 - The built-in function [`range`](https://docs.python.org/3/library/stdtypes.html#range) produces a sequence of numbers.
   - *Not* a list: the numbers are produced on demand
@@ -143,7 +143,7 @@ a range is not a list: range(0, 3)
 2
 ```
 
-## The Accumulator pattern turns many values into one.
+## The Accumulator pattern turns many values into one
 
 - A common pattern in programs is to:
   1. Initialize an *accumulator* variable to zero, the empty string, or the empty list.

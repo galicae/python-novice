@@ -31,7 +31,7 @@ Some points worth highlighting:
 - use clear, semantically meaningful variable names
 - use white-space, *not* tabs, to indent lines (tabs can cause problems across different text editors, operating systems, and version control systems)
 
-## Follow standard Python style in your code.
+## Follow standard Python style in your code
 
 - [PEP8](https://www.python.org/dev/peps/pep-0008):
   a style guide for Python that discusses topics such as how to name variables,
@@ -43,7 +43,7 @@ Some points worth highlighting:
 - Some groups and organizations follow different style guidelines besides PEP8. For example, the [Google style guide on Python](https://google.github.io/styleguide/pyguide.html) makes slightly different recommendations. Google wrote an application that can help you format your code in either their style or PEP8 called [yapf](https://github.com/google/yapf/).
 - With respect to coding style, the key is *consistency*. Choose a style for your project be it PEP8, the Google style, or something else and do your best to ensure that you and anyone else you are collaborating with sticks to it. Consistency within a project is often more impactful than the particular style used. A consistent style will make your software easier to read and understand for others and for your future self.
 
-## Use assertions to check for internal errors.
+## Use assertions to check for internal errors
 
 Assertions are a simple but powerful method for making sure that the context in which your code is executing is as you expect.
 
@@ -56,7 +56,7 @@ def calc_bulk_density(mass, volume):
 
 If the assertion is `False`, the Python interpreter raises an `AssertionError` runtime exception. The source code for the expression that failed will be displayed as part of the error message. To ignore assertions in your code run the interpreter with the '-O' (optimize) switch. Assertions should contain only simple checks and never change the state of the program. For example, an assertion should never contain an assignment.
 
-## Use docstrings to provide builtin help.
+## Use docstrings to provide builtin help
 
 If the first thing in a function is a character string that is not assigned directly to a variable, Python attaches it to the function, accessible via the builtin help function. This string that provides documentation is also known as a *docstring*.
 

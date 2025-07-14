@@ -17,7 +17,7 @@ exercises: 15
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
 
-## Break programs down into functions to make them easier to understand.
+## Break programs down into functions to make them easier to understand
 
 - Human beings can only keep a few items in working memory at a time.
 - Understand larger/more complicated ideas by understanding and combining pieces.
@@ -28,7 +28,7 @@ exercises: 15
 - Also enables *re-use*.
   - Write one time, use many times.
 
-## Define a function using `def` with a name, parameters, and a block of code.
+## Define a function using `def` with a name, parameters, and a block of code
 
 - Begin the definition of a new function with `def`.
 - Followed by the name of the function.
@@ -46,7 +46,7 @@ def print_greeting():
     print('Right?')
 ```
 
-## Defining a function does not run it.
+## Defining a function does not run it
 
 - Defining a function does not run it.
   - Like assigning a value to a variable.
@@ -60,7 +60,7 @@ print_greeting()
 Hello!
 ```
 
-## Arguments in a function call are matched to its defined parameters.
+## Arguments in a function call are matched to its defined parameters
 
 - Functions are most useful when they can operate on different data.
 - Specify *parameters* when defining a function.
@@ -98,7 +98,7 @@ print_date(month=3, day=19, year=1871)
   `()` contains the ingredients for the function
   while the body contains the recipe.
 
-## Functions may return a result to their caller using `return`.
+## Functions may return a result to their caller using `return`
 
 - Use `return ...` to give a value back to the caller.
 - May occur anywhere in the function.

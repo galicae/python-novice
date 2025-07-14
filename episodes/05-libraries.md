@@ -19,7 +19,7 @@ exercises: 10
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
 
-## Most of the power of a programming language is in its libraries.
+## Most of the power of a programming language is in its libraries
 
 - A *library* is a collection of files (called *modules*) that contains
   functions for use by other programs.
@@ -41,7 +41,7 @@ module, so don't worry if you mix them.
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
 
-## A program must import a library module before using it.
+## A program must import a library module before using it
 
 - Use `import` to load a library module into a program's memory.
 - Then refer to things from the module as `module_name.thing_name`.
@@ -64,7 +64,7 @@ cos(pi) is -1.0
   - `math.cos(pi)` won't work: the reference to `pi`
     doesn't somehow "inherit" the function's reference to `math`.
 
-## Use `help` to learn about the contents of a library module.
+## Use `help` to learn about the contents of a library module
 
 - Works just like help for a function.
 
@@ -97,7 +97,7 @@ FUNCTIONS
 ⋮ ⋮ ⋮
 ```
 
-## Import specific items from a library module to shorten programs.
+## Import specific items from a library module to shorten programs
 
 - Use `from ... import ...` to load only specific items from a library module.
 - Then refer to them directly without library name as prefix.
@@ -112,7 +112,7 @@ print('cos(pi) is', cos(pi))
 cos(pi) is -1.0
 ```
 
-## Create an alias for a library module when importing it to shorten programs.
+## Create an alias for a library module when importing it to shorten programs
 
 - Use `import ... as ...` to give a library a short *alias* while importing it.
 - Then refer to items in the library using that shortened name.

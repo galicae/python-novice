@@ -18,7 +18,7 @@ exercises: 15
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
 
-## [`matplotlib`](https://matplotlib.org/) is the most widely used scientific plotting library in Python.
+## [`matplotlib`](https://matplotlib.org/) is the most widely used scientific plotting library in Python
 
 - Commonly use a sub-library called [`matplotlib.pyplot`](https://matplotlib.org/stable/tutorials/introductory/pyplot.html).
 - The Jupyter Notebook will render plots inline by default.
@@ -60,7 +60,7 @@ if several are created by a single cell.
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
 
-## Plot data directly from a [`Pandas dataframe`](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.html).
+## Plot data directly from a [`Pandas dataframe`](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.html)
 
 - We can also plot [Pandas dataframes](https://pandas.pydata.org/pandas-docs/stable/generated/pandas.DataFrame.html).
 - Before plotting, we convert the column headings from a `string` to `integer` data type, since they represent numerical values,
@@ -90,7 +90,7 @@ data.loc['Australia'].plot()
 
 ![](fig/9_gdp_australia.svg){alt='GDP plot for Australia'}
 
-## Select and transform data, then plot it.
+## Select and transform data, then plot it
 
 - By default, [`DataFrame.plot`](https://pandas.pydata.org/pandas-docs/stable/generated/pandas.DataFrame.plot.html#pandas.DataFrame.plot) plots with the rows as the X axis.
 - We can transpose the data in order to plot multiple series.
@@ -102,7 +102,7 @@ plt.ylabel('GDP per capita')
 
 ![](fig/9_gdp_australia_nz.svg){alt='GDP plot for Australia and New Zealand'}
 
-## Many styles of plot are available.
+## Many styles of plot are available
 
 - For example, do a bar plot using a fancier style.
 
@@ -114,7 +114,7 @@ plt.ylabel('GDP per capita')
 
 ![](fig/9_gdp_bar.svg){alt='GDP barplot for Australia'}
 
-## Data can also be plotted by calling the `matplotlib` `plot` function directly.
+## Data can also be plotted by calling the `matplotlib` `plot` function directly
 
 - The command is `plt.plot(x, y)`
 - The color and format of markers can also be specified as an additional optional argument e.g., `b-` is a blue line, `g--` is a green dashed line.
@@ -130,7 +130,7 @@ plt.plot(years, gdp_australia, 'g--')
 
 ![](fig/9_gdp_australia_formatted.svg){alt='GDP formatted plot for Australia'}
 
-## Can plot many sets of data together.
+## Can plot many sets of data together
 
 ```python
 # Select two countries' worth of data.
