@@ -38,3 +38,27 @@ mistrustful.
 +=======================================+================================================+
 | ![](fig/efficiency.png)               | ![](fig/reproducibility.png)                   |
 +---------------------------------------+------------------------------------------------+
+
+This part of the course follows bash literacy and introduction to version control; its aim is mostly
+to teach the students algorithmic thought, problem solving, and Python syntax. In particular, after
+conquering the basics of Python syntax, the students will experience the following loop multiple
+times:
+
+1. Encounter a new problem.
+2. Understand the problem by breaking it down, comparing to solved problems, or drawing from previous knowledge/first principles.
+3. Formulate clear solution objectives.
+4. Sketch a solution algorithm (theoretical solution).
+5. Translate the algorithm to Python.
+6. Overcome logical/syntax errors; iterate and improve on solution.
+7. Validate solution.
+8. Look back.
+9. Log solution with a version-control system.
+
+The experience of overcoming multiple unknown problem settings will slowly build confidence in the
+students. Furthermore, they will practice cooperation and improve their code comprehension skills by
+interacting with their colleagues and the instructor.
+
+This course will help the students build a new, healthy relationship with programming, upon which
+their future interactions can be based. It will also teach them the basics of Python programming,
+versing them in a popular and well-supported programming language with direct applications in the
+life sciences.
