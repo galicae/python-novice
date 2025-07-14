@@ -22,14 +22,14 @@ exercises: 10
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
 
-## Use comments to add documentation to programs.
+## Use comments to add documentation to programs
 
 ```python
 # This sentence isn't executed by Python.
 adjustment = 0.5   # Neither is this - anything after '#' is ignored.
 ```
 
-## A function may take zero or more arguments.
+## A function may take zero or more arguments
 
 - We have seen some functions already --- now let's take a closer look.
 - An *argument* is a value passed into a function.
@@ -52,7 +52,7 @@ before
 after
 ```
 
-## Every function returns something.
+## Every function returns something
 
 - Every function call produces some result.
 - If the function doesn't have a useful result to return,
@@ -69,7 +69,7 @@ example
 result of print is None
 ```
 
-## Commonly-used built-in functions include `max`, `min`, and `round`.
+## Commonly-used built-in functions include `max`, `min`, and `round`
 
 - Use `max` to find the largest value of one or more values.
 - Use `min` to find the smallest.
@@ -86,7 +86,7 @@ print(min('a', 'A', '0'))
 0
 ```
 
-## Functions may only work for certain (combinations of) arguments.
+## Functions may only work for certain (combinations of) arguments
 
 - `max` and `min` must be given at least one argument.
   - "Largest of the empty set" is a meaningless question.
@@ -104,7 +104,7 @@ TypeError                                 Traceback (most recent call last)
 TypeError: '>' not supported between instances of 'str' and 'int'
 ```
 
-## Functions may have default values for some arguments.
+## Functions may have default values for some arguments
 
 - `round` will round off a floating-point number.
 - By default, rounds to zero decimal places.
@@ -165,7 +165,7 @@ HELLO WORLD
 True
 ```
 
-## Use the built-in function `help` to get help for a function.
+## Use the built-in function `help` to get help for a function
 
 - Every built-in function has online documentation.
 
@@ -183,7 +183,7 @@ round(number, ndigits=None)
     the return value has the same type as the number.  ndigits may be negative.
 ```
 
-## The Jupyter Notebook has two ways to get help.
+## The Jupyter Notebook has two ways to get help
 
 - Option 1: Place the cursor near where the function is invoked in a cell
   (i.e., the function name or its parameters),
@@ -191,7 +191,7 @@ round(number, ndigits=None)
   - Do this several times to expand the information returned.
 - Option 2: Type the function name in a cell with a question mark after it. Then run the cell.
 
-## Python reports a syntax error when it can't understand the source of a program.
+## Python reports a syntax error when it can't understand the source of a program
 
 - Won't even try to run the program if it can't be parsed.
 
@@ -241,7 +241,7 @@ SyntaxError: unexpected EOF while parsing
 - Next is the problematic line of code,
   indicating the problem with a `^` pointer.
 
-## Python reports a runtime error when something goes wrong while a program is executing. {#runtime-error}
+## Python reports a runtime error when something goes wrong while a program is executing {#runtime-error}
 
 ```python
 age = 53
