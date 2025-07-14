@@ -210,7 +210,86 @@ I know...
   - If `help(math)` produces an error, what have you forgotten to do?
   - Fill in the blanks in code below so that the import statement and program run.
 
-### [Reading Tabular Data](../episodes/06-reading-tabular.md) (10:55)
+### [Lists](../episodes/06-lists.md) (13:00)
+
+- Teaching: 10 min
+  - Explain why programs need collections of values.
+  - Write programs that create flat lists, index them, slice them, and modify them through assignment and method calls.
+- Challenges: 10 min
+  - Fill in the blanks so that the program produces the output shown.
+  - How large are the following slices?
+  - What do negative index expressions print?
+  - What does a "stride" in a slice do?
+  - How do slices treat out-of-range bounds?
+  - What are the differences between sorting these two ways?
+  - What is the difference between `new = old` and `new = old[:]`?
+
+### [Loops](../episodes/07-for-loops.md) (13:20)
+
+- Teaching: 10 min
+  - Explain what for loops are normally used for.
+  - Trace the execution of a simple (unnested) loop and correctly state the values of variables in each iteration.
+  - Write for loops that use the Accumulator pattern to aggregate values.
+- Challenges: 15 min
+  - Is an indentation error a syntax error or a runtime error?
+  - Trace which lines of this program are executed in what order.
+  - Fill in the blanks in this program so that it reverses a string.
+  - Fill in the blanks in this series of examples to get practice accumulating values.
+  - Reorder and indent these lines to calculate the cumulative sum of the list values.
+
+### [Conditionals](../episodes/08-conditionals.md) (15:00)
+
+- Teaching: 10 min
+  - Correctly write programs that use if and else statements and simple Boolean expressions (without logical operators).
+  - Trace the execution of unnested conditionals and conditionals inside loops.
+- Challenges: 15 min
+  - Trace the execution of this conditional statement.
+  - Fill in the blanks so that this function replaces negative values with zeroes.
+  - Modify this program so that it only processes files with fewer than 50 records.
+  - Modify this program so that it always finds the largest and smallest values in a list
+    no matter what the list's values are.
+
+### [Writing Functions](../episodes/09-writing-functions.md) (14:00)
+
+- Teaching: 10 min
+  - Explain and identify the difference between function definition and function call.
+  - Write a function that takes a small, fixed number of arguments and produces a single result.
+- Challenges: 15 min
+  - This code defines and calls a function - what does it print when run?
+  - Explain why this short program prints things in the order it does.
+  - Fill in the blanks to create a function that finds the minimum value in a data file.
+  - Fill in the blanks to create a function that finds the first negative value in a list.
+    What does your function do if the list is empty?
+  - Why is it sometimes useful to pass arguments by naming the corresponding parameters?
+  - Fill in the blanks and turn this short piece of code into a function.
+
+### [Variable Scope](../episodes/10-scope.md) (14:25)
+
+- Teaching: 10 min
+  - Identify local and global variables.
+  - Identify parameters as local variables.
+  - Read a traceback and determine the file, function, and line number on which the error occurred.
+- Challenges: 10 min
+  - Trace the changes to the values in this program,
+    being careful to distinguish local from global values.
+
+### [Programming Style](../episodes/11-style.md) (15:25)
+
+- Teaching: 15 min
+  - How can I make my programs more readable?
+  - How do most programmers format their code?
+  - How can programs check their own operation?
+- Challenges: 15 min
+  - Which lines in this code will be available as online help?
+  - Turn the comments in this program into docstrings.
+  - Rewrite this short program to be more readable.
+
+## Extra Credits (EC)
+
+The following were part of the original course, but deviate from the focus of this course
+(algorithmic thought, problem solving), so they were shunted off to the side.
+
+### [Reading Tabular Data](../episodes/EC-01-reading-tabular.md) (10:55)
 
 - Teaching: 10 min
   - Import the Pandas library.
@@ -222,7 +301,7 @@ I know...
   - What string(s) should you pass to `read_csv` to read files from other directories?
   - How can you *write* CSV data?
 
-### [DataFrames](../episodes/07-data-frames.md) (11:15)
+### [DataFrames](../episodes/EC-02-data-frames.md) (11:15)
 
 - Teaching: 15 min
   - Select individual values from a Pandas dataframe.
@@ -241,7 +320,7 @@ I know...
     what would you do if asked to create a table of GDP per capita for Poland
     for the Twentieth Century?
 
-### [Plotting](../episodes/08-plotting.md) (11:45)
+### [Plotting](../episodes/EC-03-plotting.md) (11:45)
 
 - Teaching: 15 min
   - Create a time series plot showing a single data set.
@@ -251,46 +330,7 @@ I know...
   - Modify the example to create a scatter plot of GDP per capita in Asian countries.
   - Explain what each argument to `plot` does in the following example.
 
-### [Lists](../episodes/09-lists.md) (13:00)
-
-- Teaching: 10 min
-  - Explain why programs need collections of values.
-  - Write programs that create flat lists, index them, slice them, and modify them through assignment and method calls.
-- Challenges: 10 min
-  - Fill in the blanks so that the program produces the output shown.
-  - How large are the following slices?
-  - What do negative index expressions print?
-  - What does a "stride" in a slice do?
-  - How do slices treat out-of-range bounds?
-  - What are the differences between sorting these two ways?
-  - What is the difference between `new = old` and `new = old[:]`?
-
-### [Loops](../episodes/10-for-loops.md) (13:20)
-
-- Teaching: 10 min
-  - Explain what for loops are normally used for.
-  - Trace the execution of a simple (unnested) loop and correctly state the values of variables in each iteration.
-  - Write for loops that use the Accumulator pattern to aggregate values.
-- Challenges: 15 min
-  - Is an indentation error a syntax error or a runtime error?
-  - Trace which lines of this program are executed in what order.
-  - Fill in the blanks in this program so that it reverses a string.
-  - Fill in the blanks in this series of examples to get practice accumulating values.
-  - Reorder and indent these lines to calculate the cumulative sum of the list values.
-
-### [Conditionals](11-conditionals) (15:00)
-
-- Teaching: 10 min
-  - Correctly write programs that use if and else statements and simple Boolean expressions (without logical operators).
-  - Trace the execution of unnested conditionals and conditionals inside loops.
-- Challenges: 15 min
-  - Trace the execution of this conditional statement.
-  - Fill in the blanks so that this function replaces negative values with zeroes.
-  - Modify this program so that it only processes files with fewer than 50 records.
-  - Modify this program so that it always finds the largest and smallest values in a list
-    no matter what the list's values are.
-
-### [Looping Over Data Sets](12-looping-data-sets) (13:45)
+### [Looping Over Data Sets](../episodes/EC-04-looping-data-sets.md) (13:45)
 
 - Teaching: 5 min
   - Be able to read and write globbing expressions that match sets of files.
@@ -300,46 +340,3 @@ I know...
   - Which filenames are *not* matched by this glob expression?
   - Modify this program so that it prints the number of records in the shortest file.
   - Write a program that reads and plots all of the regional data sets.
-
-### [Writing Functions](13-writing-functions) (14:00)
-
-- Teaching: 10 min
-  - Explain and identify the difference between function definition and function call.
-  - Write a function that takes a small, fixed number of arguments and produces a single result.
-- Challenges: 15 min
-  - This code defines and calls a function - what does it print when run?
-  - Explain why this short program prints things in the order it does.
-  - Fill in the blanks to create a function that finds the minimum value in a data file.
-  - Fill in the blanks to create a function that finds the first negative value in a list.
-    What does your function do if the list is empty?
-  - Why is it sometimes useful to pass arguments by naming the corresponding parameters?
-  - Fill in the blanks and turn this short piece of code into a function.
-
-### [Variable Scope](14-scope) (14:25)
-
-- Teaching: 10 min
-  - Identify local and global variables.
-  - Identify parameters as local variables.
-  - Read a traceback and determine the file, function, and line number on which the error occurred.
-- Challenges: 10 min
-  - Trace the changes to the values in this program,
-    being careful to distinguish local from global values.
-
-
-### [Programming Style](../episodes/15-style.md) (15:25)
-
-- Teaching: 15 min
-  - How can I make my programs more readable?
-  - How do most programmers format their code?
-  - How can programs check their own operation?
-- Challenges: 15 min
-  - Which lines in this code will be available as online help?
-  - Turn the comments in this program into docstrings.
-  - Rewrite this short program to be more readable.
-
-### [Wrap-Up](../episodes/16-wrap.md) (15:55)
-
-- Teaching: 20 min
-  - Name and locate scientific Python community sites for software, workshops, and help.
-- Challenges: 0 min
-  - None.

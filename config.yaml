@@ -64,17 +64,16 @@ episodes:
 - 03-types-conversion.md
 - 04-built-in.md
 - 05-libraries.md
-- 06-reading-tabular.md
-- 07-data-frames.md
-- 08-plotting.md
-- 09-lists.md
-- 10-for-loops.md
-- 11-conditionals.md
-- 12-looping-data-sets.md
-- 13-writing-functions.md
-- 14-scope.md
-- 15-style.md
-- 16-wrap.md
+- 06-lists.md
+- 07-for-loops.md
+- 08-conditionals.md
+- 09-writing-functions.md
+- 10-scope.md
+- 11-style.md
+- EC-01-reading-tabular.md
+- EC-02-data-frames.md
+- EC-03-plotting.md
+- EC-04-looping-data-sets.md
 
 # Information for Learners
 learners: 

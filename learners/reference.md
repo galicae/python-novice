@@ -65,50 +65,7 @@ title: 'Reference'
   - Example of referring to an item with the module's name: `math.cos(math.pi)`.
 - Importing the plotting library as an alias: `import matplotlib as mpl`
 
-## [Reading Tabular Data into DataFrames](episodes/06-reading-tabular.md)
-
-- Use the pandas library to do statistics on tabular data. Load with `import pandas as pd`.
-  - To read in a csv: `pd.read_csv()`, including the path name in the parenthesis.
-    - To specify a column's values should be used as row headings: `pd.read_csv('path', index_col='column name')`, where path and column name should be replaced with the relevant values.
-- To get more information about a DataFrame, use `DataFrame.info`, replacing `DataFrame` with the variable name of your DataFrame.
-- Use `DataFrame.columns` to view the column names.
-- Use `DataFrame.T` to transpose a DataFrame.
-- Use `DataFrame.describe` to get summary statistics about your data.
-
-## [Pandas DataFrames](episodes/07-data-frames.md)
-
-- Select data using `[i,j]`
-  - To select by entry position: `DataFrame.iloc[..., ...]`
-    - This is inclusive of everything except the final index.
-  - To select by entry label: `DataFrame.loc[..., ...]`
-    - Can select multiple rows or columns by listing labels.
-    - This is inclusive to both ends.
-  - Use `:` to select all rows or columns.
-- Can also select data based on values using `True` and `False`. This is a Boolean mask.
-  - `mask = subset > 10000`
-  - We can then use this to select values.
-- To use a select-apply-combine operation we use `data.apply(lambda x: x > x.mean())` where `mean()` can be any operation the user would like to be applied to x.
-
-## [Plotting](episodes/08-plotting.md)
-
-- The most widely used plotting library is `matplotlib`.
-  - Usually imported using `import matplotlib.pyplot as plt`.
-  - To plot we use the command `plt.plot(time, position)`.
-  - To create a legend use `plt.legend(['label1', 'label2'], loc='upper left')`
-    - Can also define labels within the plot statements by using `plt.plot(time, position, label='label')`. To make the legend show up, use `plt.legend()`
-  - To label x and y axis `plt.xlabel('label')` and `plt.ylabel('label')` are used.
-- Pandas DataFrames can be used to plot by using `DataFrame.plot()`. Any operations that can be used on a DataFrame can be applied while plotting.
-  - To plot a bar plot `data.plot(kind='bar')`
-
-```python
-import matplotlib.puplot as plot
-plt.plot(time, position, label='label')
-plt.xlabel('x axis label')
-plt.ylabel('y axis label')
-plt.legend()
-```
-
-## [Lists](episodes/09-lists.md)
+## [Lists](episodes/06-lists.md)
 
 - Defined within `[...]` and separated by `,`.
   - An empty list can be created by using `[]`.
@@ -119,7 +76,7 @@ plt.legend()
 - To combine two lists use `list_name_1.extend(list_name_2)`.
 - To remove an item from a list use `del list_name[index]`.
 
-## [For Loops](episodes/10-for-loops.md)
+## [For Loops](episodes/07-for-loops.md)
 
 - Start a for loop with `for number in [1, 2, 3]:`, with the following lines indented.
   - `[1, 2, 3]` is considered the collection.
@@ -132,7 +89,7 @@ for number in range(0,5):
     print(number)
 ```
 
-## [Conditionals](episodes/11-conditionals.md)
+## [Conditionals](episodes/08-conditionals.md)
 
 - Defined similarly to a loop, using `if variable conditional value:`.
   - For example, `if variable > 5:`.
@@ -157,22 +114,7 @@ for m in [3, 6, 7, 2, 8]:
         print(m, 'is small')
 ```
 
-## [Looping Over Data Sets](episodes/12-looping-data-sets.md)
-
-- Use a for loop: `for filename in [file1, file2]:`
-- To find a set of files using a pattern use `glob.glob`
-  - Must import first using `import glob`.
-  - `*` indicates "match zero or more characters"
-  - `?` indicates "match exactly one character"
-    - For example: `glob.glob(*.txt)` will find all files that end with `.txt` in the current directory.
-- Combine these by writing a loop using: `for filename in glob.glob(*.txt):`
-
-```python
-for filename in glob.glob(*.txt):
-  data = pd.read_csv(filename)
-```
-
-## [Writing Functions](episodes/13-writing-functions.md)
+## [Writing Functions](episodes/09-writing-functions.md)
 
 - Define a function using `def function_name(parameters):`. Replace `parameters` with the variables to use when the function is executed.
 - Run by using `function_name(parameters)`.
@@ -186,18 +128,78 @@ def add_numbers(a, b):
 add_numbers(1, 4)
 ```
 
-## [Variable Scope](episodes/14-scope.md)
+## [Variable Scope](episodes/10-scope.md)
 
 - A local variable is defined in a function and can only be seen and used within that function.
 - A global variable is defined outside of a function and can be seen or used anywhere after definition.
 
-## [Programming Style](episodes/15-style.md)
+## [Programming Style](episodes/11-style.md)
 
 - Document your code.
 - Use clear and meaningful variable names.
 - Follow [the PEP8 style guide](https://www.python.org/dev/peps/pep-0008) when setting up your code.
 - Use assertions to check for internal errors.
 - Use docstrings to provide help.
+
+# Extra Credits
+
+## [Reading Tabular Data into DataFrames](episodes/EC-01-reading-tabular.md)
+
+- Use the pandas library to do statistics on tabular data. Load with `import pandas as pd`.
+  - To read in a csv: `pd.read_csv()`, including the path name in the parenthesis.
+    - To specify a column's values should be used as row headings: `pd.read_csv('path', index_col='column name')`, where path and column name should be replaced with the relevant values.
+- To get more information about a DataFrame, use `DataFrame.info`, replacing `DataFrame` with the variable name of your DataFrame.
+- Use `DataFrame.columns` to view the column names.
+- Use `DataFrame.T` to transpose a DataFrame.
+- Use `DataFrame.describe` to get summary statistics about your data.
+
+## [Pandas DataFrames](episodes/EC-02-data-frames.md)
+
+- Select data using `[i,j]`
+  - To select by entry position: `DataFrame.iloc[..., ...]`
+    - This is inclusive of everything except the final index.
+  - To select by entry label: `DataFrame.loc[..., ...]`
+    - Can select multiple rows or columns by listing labels.
+    - This is inclusive to both ends.
+  - Use `:` to select all rows or columns.
+- Can also select data based on values using `True` and `False`. This is a Boolean mask.
+  - `mask = subset > 10000`
+  - We can then use this to select values.
+- To use a select-apply-combine operation we use `data.apply(lambda x: x > x.mean())` where `mean()` can be any operation the user would like to be applied to x.
+
+## [Plotting](episodes/EC-03-plotting.md)
+
+- The most widely used plotting library is `matplotlib`.
+  - Usually imported using `import matplotlib.pyplot as plt`.
+  - To plot we use the command `plt.plot(time, position)`.
+  - To create a legend use `plt.legend(['label1', 'label2'], loc='upper left')`
+    - Can also define labels within the plot statements by using `plt.plot(time, position, label='label')`. To make the legend show up, use `plt.legend()`
+  - To label x and y axis `plt.xlabel('label')` and `plt.ylabel('label')` are used.
+- Pandas DataFrames can be used to plot by using `DataFrame.plot()`. Any operations that can be used on a DataFrame can be applied while plotting.
+  - To plot a bar plot `data.plot(kind='bar')`
+
+```python
+import matplotlib.puplot as plot
+plt.plot(time, position, label='label')
+plt.xlabel('x axis label')
+plt.ylabel('y axis label')
+plt.legend()
+```
+
+## [Looping Over Data Sets](episodes/EC-04-looping-data-sets.md)
+
+- Use a for loop: `for filename in [file1, file2]:`
+- To find a set of files using a pattern use `glob.glob`
+  - Must import first using `import glob`.
+  - `*` indicates "match zero or more characters"
+  - `?` indicates "match exactly one character"
+    - For example: `glob.glob(*.txt)` will find all files that end with `.txt` in the current directory.
+- Combine these by writing a loop using: `for filename in glob.glob(*.txt):`
+
+```python
+for filename in glob.glob(*.txt):
+  data = pd.read_csv(filename)
+```
 
 ## Glossary
 

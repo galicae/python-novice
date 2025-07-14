@@ -130,7 +130,7 @@ primes after removing last item: [2, 3, 5, 7]
 - Use `[]` on its own to represent a list that doesn't contain any values.
   - "The zero of lists."
 - Helpful as a starting point for collecting values
-  (which we will see in the [next episode](10-for-loops.md)).
+  (which we will see in the [next episode](07-for-loops.md)).
 
 ## Lists may contain values of different types.
 

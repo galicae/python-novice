@@ -82,7 +82,7 @@ NameError: name 'last_name' is not defined
 ```
 
 - The last line of an error message is usually the most informative.
-- We will look at error messages in detail [later](14-scope.md#reading-error-messages).
+- We will look at error messages in detail [later](10-scope.md#reading-error-messages).
 
 :::::::::::::::::::::::::::::::::::::::::  callout
 
