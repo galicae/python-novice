@@ -109,6 +109,18 @@ clears the interpreter and runs everything from a clean slate going top to botto
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
 
+:::::::::::::::::::::::::::::::::::::::  challenge
+
+## Practice
+
+Complete the W3Schools training exercises for
+
+- [variables](https://www.w3schools.com/python/exercise.asp?x=xrcise_variables1)
+- [variable names](https://www.w3schools.com/python/exercise.asp?x=xrcise_variables_names1)
+
+::::::::::::::::::::::::::::::::::::::::::::::::::
+
+
 ## Variables can be used in calculations
 
 - We can use variables in calculations just as if they were values.
@@ -122,6 +134,75 @@ print('Age in three years:', age)
 ```output
 Age in three years: 45
 ```
+
+:::::::::::::::::::::::::::::::::::::::  challenge
+
+## Practice
+
+Complete the W3Schools training exercises for
+
+- [variables output](https://www.w3schools.com/python/exercise.asp?x=xrcise_variables_output1)
+
+Complete the Rosalind exercises
+
+- [INI2](https://rosalind.info/problems/ini2/)
+
+::::::::::::::::::::::::::::::::::::::::::::::::::
+
+:::::::::::::::::::::::::::::::::::::::  challenge
+
+## Modifying values
+
+What will be the result of the following syntax:
+
+```python
+x = 5
+x += 3
+print(x)
+```
+
+:::::::::::::::  solution
+
+## Solution
+
+First the variable `x` is defined, and assigned the value 5; then, the variable is modified, as the
+value 3 is added to it. Finally, the variable is printed; its value is now 8.
+
+
+
+:::::::::::::::::::::::::
+
+::::::::::::::::::::::::::::::::::::::::::::::::::
+
+
+:::::::::::::::::::::::::::::::::::::::  challenge
+
+## Operators
+
+Multiply 10 with 5 and print the result.
+
+```python
+print(10 __ 5)
+```
+
+:::::::::::::::  solution
+
+## Solution
+
+```python
+print(10 * 5)
+```
+
+The `*` character performs multiplication. Refer to the
+[Operators](../learners/reference.html#python-operators) table for a list of Python operators
+
+
+
+:::::::::::::::::::::::::
+
+::::::::::::::::::::::::::::::::::::::::::::::::::
+
+
 
 ## Use an index to get a single character from a string
 
@@ -399,6 +480,20 @@ What would these expressions return?
   
 
 :::::::::::::::::::::::::
+
+::::::::::::::::::::::::::::::::::::::::::::::::::
+
+:::::::::::::::::::::::::::::::::::::::  challenge
+
+## More Slicing Practice
+
+Complete the W3Schools training exercises for
+
+- [String slicing](https://www.w3schools.com/python/exercise.asp?x=xrcise_strings_slicing1)
+
+Complete the Rosalind exercises
+
+- [INI3](https://rosalind.info/problems/ini3/)
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
 

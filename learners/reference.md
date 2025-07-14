@@ -258,5 +258,38 @@ Variables
 :     Names for values.
 
 
+## Python Operators
+
+
+| Operator | Example       | Same As             |
+|----------|---------------|---------------------|
+| `+`      | `a + b`       | Addition            |
+| `-`      | `a - b`       | Subtraction         |
+| `*`      | `a * b`       | Multiplication      |
+| `/`      | `a / b`       | Division (float)    |
+| `//`     | `a // b`      | Floor Division      |
+| `%`      | `a % b`       | Modulus (remainder) |
+| `**`     | `a ** b`      | Exponentiation      |
+| `=`      | `a = b`       | Assignment          |
+| `+=`     | `a += b`      | `a = a + b`         |
+| `-=`     | `a -= b`      | `a = a - b`         |
+| `*=`     | `a *= b`      | `a = a * b`         |
+| `/=`     | `a /= b`      | `a = a / b`         |
+| `//=`    | `a //= b`     | `a = a // b`        |
+| `%=`     | `a %= b`      | `a = a % b`         |
+| `**=`    | `a **= b`     | `a = a ** b`        |
+| `==`     | `a == b`      | Equals              |
+| `!=`     | `a != b`      | Not equal           |
+| `>`      | `a > b`       | Greater than        |
+| `<`      | `a < b`       | Less than           |
+| `>=`     | `a >= b`      | Greater or equal    |
+| `<=`     | `a <= b`      | Less or equal       |
+| `and`    | `a and b`     | Logical AND         |
+| `or`     | `a or b`      | Logical OR          |
+| `not`    | `not a`       | Logical NOT         |
+| `is`     | `a is b`      | Object identity     |
+| `is not` | `a is not b`  | Not same identity   |
+| `in`     | `a in b`      | Membership test     |
+| `not in` | `a not in b`  | Not a member        |
 
 

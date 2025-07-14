@@ -250,6 +250,30 @@ print(result, 'is', type(result))
 
 :::::::::::::::::::::::::::::::::::::::  challenge
 
+## More practice
+
+if `x = 5`, what is the correct syntax for printing the data type of the variable `x`?
+
+- `print(dtype(x))`
+- `print(type(x))`
+- `print(x.dtype())`
+
+:::::::::::::::  solution
+
+## Solution
+
+The answer is `print(type(x))`. There is no `dtype` function in base Python, neither as a standalone
+function nor as a built-in function for an integer.
+  
+
+:::::::::::::::::::::::::
+
+::::::::::::::::::::::::::::::::::::::::::::::::::
+
+
+
+:::::::::::::::::::::::::::::::::::::::  challenge
+
 ## Choose a Type
 
 What type of value (integer, floating point number, or character string)
@@ -480,6 +504,16 @@ print(a_complex_number.imag)
   
 
 :::::::::::::::::::::::::
+
+::::::::::::::::::::::::::::::::::::::::::::::::::
+
+:::::::::::::::::::::::::::::::::::::::  challenge
+
+## Practicing with types
+
+Complete the following W3Schools exercises:
+- [Numbers](https://www.w3schools.com/python/exercise.asp?x=xrcise_numbers1)
+- [Casting](https://www.w3schools.com/python/python_casting.asp)
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
 
