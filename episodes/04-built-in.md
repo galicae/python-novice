@@ -451,6 +451,18 @@ what index expression will get the last character in the string `name`?
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
 
+:::::::::::::::::::::::::::::::::::::::  challenge
+
+## Reflection exercise
+
+Reflect on and discuss the following:
+
+- What are the different kinds of errors Python will report?
+- Did the code always produce the results you expected? If not, why?
+- Is there something we can do to prevent errors when we write code?
+
+::::::::::::::::::::::::::::::::::::::::::::::::::
+
 :::::::::::::::::::::::::::::::::::::::::  callout
 
 ## Explore the Python docs!
@@ -476,17 +488,5 @@ unnecessary at the moment, but others are very simple and useful.
 - Python reports a syntax error when it can't understand the source of a program.
 - Python reports a runtime error when something goes wrong while a program is executing.
 - Fix syntax errors by reading the source code, and runtime errors by tracing the program's execution.
-
-::::::::::::::::::::::::::::::::::::::::::::::::::
-
-:::::::::::::::::::::::::::::::::::::::  challenge
-
-## Reflection exercise
-
-Reflect on and discuss the following:
-
-- What are the different kinds of errors Python will report?
-- Did the code always produce the results you expected? If not, why?
-- Is there something we can do to prevent errors when we write code?
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
