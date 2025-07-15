@@ -212,7 +212,13 @@ I know...
   - What are the differences between sorting these two ways?
   - What is the difference between `new = old` and `new = old[:]`?
 
-### [Loops](../episodes/07-for-loops.md)
+  ### [Dictionaries](../episodes/07-dictionaries.md)
+
+- Teaching: XX min
+  - Explain why programs need key/value pairs as a data structure.
+  - Write programs that create flat dictionaries, call values via keys, modify contents through assignment and method calls.
+
+### [Loops](../episodes/08-for-loops.md)
 
 - Teaching: 10 min
   - Explain what for loops are normally used for.
@@ -225,7 +231,7 @@ I know...
   - Fill in the blanks in this series of examples to get practice accumulating values.
   - Reorder and indent these lines to calculate the cumulative sum of the list values.
 
-### [Conditionals](../episodes/08-conditionals.md)
+### [Conditionals](../episodes/09-conditionals.md)
 
 - Teaching: 10 min
   - Correctly write programs that use if and else statements and simple Boolean expressions (without logical operators).
@@ -237,7 +243,7 @@ I know...
   - Modify this program so that it always finds the largest and smallest values in a list
     no matter what the list's values are.
 
-### [Writing Functions](../episodes/09-writing-functions.md)
+### [Writing Functions](../episodes/10-writing-functions.md)
 
 - Teaching: 10 min
   - Explain and identify the difference between function definition and function call.
@@ -251,7 +257,7 @@ I know...
   - Why is it sometimes useful to pass arguments by naming the corresponding parameters?
   - Fill in the blanks and turn this short piece of code into a function.
 
-### [Variable Scope](../episodes/10-scope.md)
+### [Variable Scope](../episodes/11-scope.md)
 
 - Teaching: 10 min
   - Identify local and global variables.
@@ -261,7 +267,7 @@ I know...
   - Trace the changes to the values in this program,
     being careful to distinguish local from global values.
 
-### [Programming Style](../episodes/11-style.md)
+### [Programming Style](../episodes/12-style.md)
 
 - Teaching: 15 min
   - How can I make my programs more readable?
