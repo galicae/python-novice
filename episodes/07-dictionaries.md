@@ -70,7 +70,7 @@ print('#students in Bioscience Technology:', student_numbers.get('Bioscience Tec
 
 ## Get Keys
 
-The keys() method will return a list of all the keys in the dictionary.
+The `keys()` method will return a list of all the keys in the dictionary.
 
 ```python
 student_numbers.keys()
@@ -79,6 +79,45 @@ student_numbers.keys()
 ```output
 dict_keys(['Bioscience Technology', 'Computational Biology', 'Post-Genomic Biology', 'Ecology and Environmental Management', 'Maths in the Living Environment'])
 ```
+
+## Get Values
+
+Similarly, the `values()` method will return a list of all the values in the dictionary.
+
+```python
+student_numbers.values()
+```
+
+```output
+dict_values([16, 12, 20, 3, 0])
+```
+
+:::::::::::::::::::::::::::::::::::::::::  callout
+
+## Both? Why not both?
+
+If you wish to get keys and values at the same time (for example to iterate over them and do
+something with each key/value pair), you can use the `items()` method. We will revisit this later,
+when we talk about loops.
+
+::::::::::::::::::::::::::::::::::::::::::::::::::
+
+:::::::::::::::::::::::::::::::::::::::::  callout
+
+## Dictionaries are ordered
+
+The way that dictionaries are implemented in Python fundamentally changed in v3.6, resulting in them
+taking up ~1/2 the space and working ~2x as fast as they used to. A side effect of this is that
+dictionary objects in Python 3.6 remember the order that entries were created in and you should be
+able to access their entries in this order. Regardless, in the examples and exercises in this
+course, we assume that this order cannot be relied upon - this is not yet considered a 'stable'
+feature of the language i.e. future versions of Python are not guaranteed to preserve the order of
+dictionaries. When writing your own code, if you want to access dictionary entries in a particular
+order, you should make sure to do so by providing keys in a specific order.
+
+
+::::::::::::::::::::::::::::::::::::::::::::::::::
+
 
 ## Dictionaries' values can be replaced by assigning to them
 
@@ -117,15 +156,15 @@ and assigning a value to it.
 
 ```python
 temperatures = {
-    "Monday": 22,
-    "Tuesday": 24,
-    "Wednesday": 21,
-    "Thursday": 23,
-    "Friday": 25
+    'Monday': 22,
+    'Tuesday': 24,
+    'Wednesday': 21,
+    'Thursday': 23,
+    'Friday': 25
 }
 print('temperatures is initially:', temperatures)
 
-temperatures["Saturday"] = 24
+temperatures['Saturday'] = 24
 print('temperatures has become:', temperatures)
 ```
 
@@ -137,7 +176,7 @@ temperatures has become: {'Monday': 22, 'Tuesday': 24, 'Wednesday': 21, 'Thursda
 The same can be achieved with the `update()` function:
 
 ```python
-temperatures.update({"Sunday": 26})
+temperatures.update({'Sunday': 26})
 print('temperatures has become: ', temperatures)
 ```
 
@@ -145,405 +184,193 @@ print('temperatures has become: ', temperatures)
 temperatures has become: {'Monday': 22, 'Tuesday': 24, 'Wednesday': 21, 'Thursday': 23, 'Friday': 25, 'Saturday': 24, 'Sunday': 26}
 ```
 
+Like lists, dictionaries can contain values of any type; therefore, dictionaries of lists or
+dictionaries of dictionaries are possible.
 
-- We will meet other methods of lists as we go along.
-  - Use `help(list)` for a preview.
-- `extend` is similar to `append`, but it allows you to combine two lists.  For example:
+:::::::::::::::::::::::::::::::::::::::  challenge
+
+## Nested dictionaries
+
+Fill in the blanks so that the program below produces the indicated output:
 
 ```python
-teen_primes = [11, 13, 17, 19]
-middle_aged_primes = [37, 41, 43, 47]
-print('primes is currently:', primes)
-primes.extend(teen_primes)
-print('primes has now become:', primes)
-primes.append(middle_aged_primes)
-print('primes has finally become:', primes)
+grades = {'Juan': {'Maths': 2},
+          'John': {'History': 1, 'Biology': 3},
+          'Gianni': {'Biology': 1}}
+
+grades['Juan'][______] = 2
+grades['Juan'][______] = 1
+
+grades[______]['Maths'] = 1
+
+grades[______]['History'] = 4
+grades[______][______] = 3
+
+print(grades)
 ```
 
 ```output
-primes is currently: [2, 3, 5, 7]
-primes has now become: [2, 3, 5, 7, 11, 13, 17, 19]
-primes has finally become: [2, 3, 5, 7, 11, 13, 17, 19, [37, 41, 43, 47]]
+{'Juan': {'Maths': 2, 'History': 2, 'Biology': 1}, 'John': {'History': 1, 'Biology': 3, 'Maths': 1}, 'Gianni': {'Biology': 1, 'History': 4, 'Maths': 3}}
 ```
 
-Note that while `extend` maintains the "flat" structure of the list, appending a list to a list means
-the last element in `primes` will itself be a list, not an integer. Lists can contain values of any
-type; therefore, lists of lists are possible.
+:::::::::::::::  solution
 
-## Use `del` to remove items from a list entirely
+## Solution
 
-- We use `del list_name[index]` to remove an element from a list (in the example, 9 is not a prime number) and thus shorten it.
+You can choose how you want to fill in the gaps; but if we assign the subjects by the order they
+were introduced, this would be the solution:
+
+```python
+grades = {'Juan': {'Maths': 2},
+          'John': {'History': 1, 'Biology': 3},
+          'Gianni': {'Biology': 1}}
+
+grades['Juan']['History'] = 2
+grades['Juan']['Biology'] = 1
+
+grades['John']['Maths'] = 1
+
+grades['Gianni']['History'] = 4
+grades['Gianni']['Maths'] = 3
+
+print(grades)
+```
+
+```output
+{'Juan': {'Maths': 2, 'History': 2, 'Biology': 1}, 'John': {'History': 1, 'Biology': 3, 'Maths': 1}, 'Gianni': {'Biology': 1, 'History': 4, 'Maths': 3}}
+```
+
+Notice that the subject order reflects the order in which the key/value pairs were added!
+
+:::::::::::::::::::::::::
+
+::::::::::::::::::::::::::::::::::::::::::::::::::
+
+## Use `del` to remove items from a dictionary entirely
+
+- We use `del dict_name[key]` to remove an element from a dictionary (in the example, 'Everyday' is
+  not a day of the week).
 - `del` is not a function or a method, but a statement in the language.
 
 ```python
-primes = [2, 3, 5, 7, 9]
-print('primes before removing last item:', primes)
-del primes[4]
-print('primes after removing last item:', primes)
+temperatures = {
+    'Monday': 22,
+    'Tuesday': 24,
+    'Wednesday': 21,
+    'Thursday': 23,
+    'Friday': 25,
+    'Everyday': 49    
+}
+print('temperature before removing Everyday:', temperatures)
+del temperatures['Everyday']
+print('temperature after removing Everyday:', temperatures)
 ```
 
 ```output
-primes before removing last item: [2, 3, 5, 7, 9]
-primes after removing last item: [2, 3, 5, 7]
+temperature before removing Everyday: {'Monday': 22, 'Tuesday': 24, 'Wednesday': 21, 'Thursday': 23, 'Friday': 25, 'Everyday': 49}
+temperature after removing Everyday: {'Monday': 22, 'Tuesday': 24, 'Wednesday': 21, 'Thursday': 23, 'Friday': 25}
 ```
 
-## The empty list contains no values
+## The empty dictionary contains no values
 
-- Use `[]` on its own to represent a list that doesn't contain any values.
-  - "The zero of lists."
-- Helpful as a starting point for collecting values
-  (which we will see in the [next episode](07-for-loops.md)).
+- Use `{}` on its own to represent a dictionary that doesn't contain any values.
+  - "The zero of dictionaries."
+- Helpful as a starting point for collecting values.
 
-## Lists may contain values of different types
 
-- A single list may contain numbers, strings, and anything else.
+## Indexing will not work on dictionaries
 
-```python
-goals = [1, 'Create lists.', 2, 'Extract items from lists.', 3, 'Modify lists.']
-```
-
-## Character strings can be indexed like lists
-
-- Get single characters from a character string using indexes in square brackets.
+- If we want to retrieve the 4th item of a dictionary, we can't simply ask for it by index:
 
 ```python
-element = 'carbon'
-print('zeroth character:', element[0])
-print('third character:', element[3])
+print(temperatures[3])
 ```
 
 ```output
-zeroth character: c
-third character: b
+Traceback (most recent call last):
+  File "<python-input-19>", line 1, in <module>
+    print(temperatures[3])
+          ~~~~~~~~~~~~^^^
+KeyError: 3
 ```
 
-## Character strings are immutable
-
-- Cannot change the characters in a string after it has been created.
-  - *Immutable*: can't be changed after creation.
-  - In contrast, lists are *mutable*: they can be modified in place.
-- Python considers the string to be a single value with parts,
-  not a collection of values.
+Python reports a `KeyError`; this indicates that it searched the dictionary's keys for the key `3`
+(careful: 3 the integer, not the string "3"), and didn't find it. If we _really, really_ want the
+fourth item of the dictionary (see ["Dictionaries are ordered"](#dictionaries-are-ordered) above),
+we can ask for the value associated with _the fourth key_:
 
 ```python
-element[0] = 'C'
-```
-
-```error
-TypeError: 'str' object does not support item assignment
-```
-
-- Lists and character strings are both *collections*.
-
-## Indexing beyond the end of the collection is an error
-
-- Python reports an `IndexError` if we attempt to access a value that doesn't exist.
-  - This is a kind of [runtime error](04-built-in.md).
-  - Cannot be detected as the code is parsed
-    because the index might be calculated based on data.
-
-```python
-print('99th element of element is:', element[99])
+keys = list(temperatures.keys())
+fourth_key = keys[3]
+print('temperature on the fourth day:', temperatures[fourth_key])
 ```
 
 ```output
-IndexError: string index out of range
+temperature on the fourth day: 23
 ```
 
 :::::::::::::::::::::::::::::::::::::::  challenge
 
-## Fill in the Blanks
+## Practice
 
-Fill in the blanks so that the program below produces the output shown.
+Complete the W3Schools training exercises for
 
-```python
-values = ____
-values.____(1)
-values.____(3)
-values.____(5)
-print('first time:', values)
-values = values[____]
-print('second time:', values)
-```
-
-```output
-first time: [1, 3, 5]
-second time: [3, 5]
-```
-
-:::::::::::::::  solution
-
-## Solution
-
-```python
-values = []
-values.append(1)
-values.append(3)
-values.append(5)
-print('first time:', values)
-values = values[1:]
-print('second time:', values)
-```
-
-:::::::::::::::::::::::::
+- [dictionaries](https://www.w3schools.com/python/exercise.asp?x=xrcise_dictionaries1)
+- [accessing dictionaries](https://www.w3schools.com/python/exercise.asp?x=xrcise_dictionaries_access1)
+- [changing dictionaries](https://www.w3schools.com/python/exercise.asp?x=xrcise_dictionaries_change1)
+- [adding items](https://www.w3schools.com/python/exercise.asp?x=xrcise_dictionaries_add1)
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
 
 :::::::::::::::::::::::::::::::::::::::  challenge
 
-## How Large is a Slice?
+## Nested dictionaries
 
-If `start` and `stop` are both non-negative integers,
-how long is the list `values[start:stop]`?
+Consider this syntax:
+
+```python
+a = {'name' : 'John', 'age' : '20'}
+b = {'name' : 'May', 'age' : '23'}
+customers = {'c1' : a, 'c2' : b}
+```
+
+what will be a correct syntax for printing the name 'May'?
+
+- `print(customers['c2']['name'])`
+- `print(customers.c2.b['name'])`
+- `print(customers.c2.name)`
 
 :::::::::::::::  solution
 
 ## Solution
 
-The list `values[start:stop]` has up to `stop - start` elements.  For example,
-`values[1:4]` has the 3 elements `values[1]`, `values[2]`, and `values[3]`.
-Why 'up to'? As we saw in [episode 2](02-variables.md),
-if `stop` is greater than the total length of the list `values`,
-we will still get a list back but it will be shorter than expected.
-
-
-
-:::::::::::::::::::::::::
-
-::::::::::::::::::::::::::::::::::::::::::::::::::
-
-:::::::::::::::::::::::::::::::::::::::  challenge
-
-## From Strings to Lists and Back
-
-Given this:
+To access a value in a dictionary we need to use its key. May is customer "c2", so first we need to
+specify that:
 
 ```python
-print('string to list:', list('tin'))
-print('list to string:', ''.join(['g', 'o', 'l', 'd']))
+may_customer = customers['c2']
+```
+
+The variable `may_customer` contains the value saved under the key `'c2'`, namely the dictionary
+`b`. Within that, the value "May" is saved under the key `'name'`:
+
+```python
+print(may_customer['name'])
 ```
 
 ```output
-string to list: ['t', 'i', 'n']
-list to string: gold
+May
 ```
 
-1. What does `list('some string')` do?
-2. What does `'-'.join(['x', 'y', 'z'])` generate?
-
-:::::::::::::::  solution
-
-## Solution
-
-1. [`list('some string')`](https://docs.python.org/3/library/stdtypes.html#list) converts a string into a list containing all of its characters.
-2. [`join`](https://docs.python.org/3/library/stdtypes.html#str.join) returns a string that is the *concatenation*
-  of each string element in the list and adds the separator between each element in the list. This results in
-  `x-y-z`. The separator between the elements is the string that provides this method.
-  
-  
-
-:::::::::::::::::::::::::
-
-::::::::::::::::::::::::::::::::::::::::::::::::::
-
-:::::::::::::::::::::::::::::::::::::::  challenge
-
-## Working With the End
-
-What does the following program print?
+Let's put it together:
 
 ```python
-element = 'helium'
-print(element[-1])
+print(customers['c2']['name'])
 ```
-
-1. How does Python interpret a negative index?
-2. If a list or string has N elements,
-  what is the most negative index that can safely be used with it,
-  and what location does that index represent?
-3. If `values` is a list, what does `del values[-1]` do?
-4. How can you display all elements but the last one without changing `values`?
-  (Hint: you will need to combine slicing and negative indexing.)
-
-:::::::::::::::  solution
-
-## Solution
-
-The program prints `m`.
-
-1. Python interprets a negative index as starting from the end (as opposed to
-  starting from the beginning).  The last element is `-1`.
-2. The last index that can safely be used with a list of N elements is element
-  `-N`, which represents the first element.
-3. `del values[-1]` removes the last element from the list.
-4. `values[:-1]`
-  
-  
-
-:::::::::::::::::::::::::
-
-::::::::::::::::::::::::::::::::::::::::::::::::::
-
-:::::::::::::::::::::::::::::::::::::::  challenge
-
-## Stepping Through a List
-
-What does the following program print?
-
-```python
-element = 'fluorine'
-print(element[::2])
-print(element[::-1])
-```
-
-1. If we write a slice as `low:high:stride`, what does `stride` do?
-2. What expression would select all of the even-numbered items from a collection?
-
-:::::::::::::::  solution
-
-## Solution
-
-The program prints
-
-```python
-furn
-eniroulf
-```
-
-1. `stride` is the step size of the slice.
-2. The slice `1::2` selects all even-numbered items from a collection: it starts
-  with element `1` (which is the second element, since indexing starts at `0`),
-  goes on until the end (since no `end` is given), and uses a step size of `2`
-  (i.e., selects every second element).
-  
-  
-
-:::::::::::::::::::::::::
-
-::::::::::::::::::::::::::::::::::::::::::::::::::
-
-:::::::::::::::::::::::::::::::::::::::  challenge
-
-## Slice Bounds
-
-What does the following program print?
-
-```python
-element = 'lithium'
-print(element[0:20])
-print(element[-1:3])
-```
-
-:::::::::::::::  solution
-
-## Solution
 
 ```output
-lithium
-
+May
 ```
-
-The first statement prints the whole string, since the slice goes beyond the total length of the string.
-The second statement returns an empty string, because the slice goes "out of bounds" of the string.
-
-
-
-:::::::::::::::::::::::::
-
-::::::::::::::::::::::::::::::::::::::::::::::::::
-
-:::::::::::::::::::::::::::::::::::::::  challenge
-
-## Sort and Sorted
-
-What do these two programs print?
-In simple terms, explain the difference between `sorted(letters)` and `letters.sort()`.
-
-```python
-# Program A
-letters = list('gold')
-result = sorted(letters)
-print('letters is', letters, 'and result is', result)
-```
-
-```python
-# Program B
-letters = list('gold')
-result = letters.sort()
-print('letters is', letters, 'and result is', result)
-```
-
-:::::::::::::::  solution
-
-## Solution
-
-Program A prints
-
-```output
-letters is ['g', 'o', 'l', 'd'] and result is ['d', 'g', 'l', 'o']
-```
-
-Program B prints
-
-```output
-letters is ['d', 'g', 'l', 'o'] and result is None
-```
-
-`sorted(letters)` returns a sorted copy of the list `letters` (the original
-list `letters` remains unchanged), while `letters.sort()` sorts the list
-`letters` in-place and does not return anything.
-
-
-
-:::::::::::::::::::::::::
-
-::::::::::::::::::::::::::::::::::::::::::::::::::
-
-:::::::::::::::::::::::::::::::::::::::  challenge
-
-## Copying (or Not)
-
-What do these two programs print?
-In simple terms, explain the difference between `new = old` and `new = old[:]`.
-
-```python
-# Program A
-old = list('gold')
-new = old      # simple assignment
-new[0] = 'D'
-print('new is', new, 'and old is', old)
-```
-
-```python
-# Program B
-old = list('gold')
-new = old[:]   # assigning a slice
-new[0] = 'D'
-print('new is', new, 'and old is', old)
-```
-
-:::::::::::::::  solution
-
-## Solution
-
-Program A prints
-
-```output
-new is ['D', 'o', 'l', 'd'] and old is ['D', 'o', 'l', 'd']
-```
-
-Program B prints
-
-```output
-new is ['D', 'o', 'l', 'd'] and old is ['g', 'o', 'l', 'd']
-```
-
-`new = old` makes `new` a reference to the list `old`; `new` and `old` point
-towards the same object.
-
-`new = old[:]` however creates a new list object `new` containing all elements
-from the list `old`; `new` and `old` are different objects.
-
 
 
 :::::::::::::::::::::::::
@@ -552,16 +379,14 @@ from the list `old`; `new` and `old` are different objects.
 
 :::::::::::::::::::::::::::::::::::::::: keypoints
 
-- A list stores many values in a single structure.
-- Use an item's index to fetch it from a list.
-- Lists' values can be replaced by assigning to them.
-- Appending items to a list lengthens it.
-- Use `del` to remove items from a list entirely.
-- The empty list contains no values.
-- Lists may contain values of different types.
-- Character strings can be indexed like lists.
-- Character strings are immutable.
-- Indexing beyond the end of the collection is an error.
+- A dictionary stores many values as key-value pairs.
+- Use the key of a value to fetch it from a dictionary.
+- Dictionaries' values can be replaced by assigning to them.
+- Setting a value to a key will update it, if it exists, or create it, if it doesn't.
+- Use `del` to remove items from a dictionary entirely.
+- The empty dictionary contains no key/value pairs.
+- Dictionaries may contain keys and values of different types.
+- Trying to use indices to summon key/value pairs is an error.
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
 
