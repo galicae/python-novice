@@ -76,7 +76,18 @@ title: 'Reference'
 - To combine two lists use `list_name_1.extend(list_name_2)`.
 - To remove an item from a list use `del list_name[index]`.
 
-## [For Loops](episodes/07-for-loops.md)
+## [Dictionaries](episodes/07-dictionaries.md)
+
+- Defined within `{...}` and separated by `,`; key/value pairs denoted with `:`.
+  - An empty dictionary can be created by using `{}`.
+- Can use `len(...)` to determine how many key/value pairs are in a dictionary.
+- _Cannot_ index; instead, use the `key` to retrieve its value: `print(dict_name[key])`.
+  - The same can be used to reassign `dict_name[key] = value`
+- To add an item to a dictionary use `dict_name[newkey] = newval`.
+- Combining two dictionaries `x` and `y`, in Python 3.9.0 or greater, can be done with `z = x | y`.
+- To remove an item from a dictionary use `del dict_name[key]`.
+
+## [For Loops](episodes/08-for-loops.md)
 
 - Start a for loop with `for number in [1, 2, 3]:`, with the following lines indented.
   - `[1, 2, 3]` is considered the collection.
@@ -89,7 +100,7 @@ for number in range(0,5):
     print(number)
 ```
 
-## [Conditionals](episodes/08-conditionals.md)
+## [Conditionals](episodes/09-conditionals.md)
 
 - Defined similarly to a loop, using `if variable conditional value:`.
   - For example, `if variable > 5:`.
@@ -114,7 +125,7 @@ for m in [3, 6, 7, 2, 8]:
         print(m, 'is small')
 ```
 
-## [Writing Functions](episodes/09-writing-functions.md)
+## [Writing Functions](episodes/10-writing-functions.md)
 
 - Define a function using `def function_name(parameters):`. Replace `parameters` with the variables to use when the function is executed.
 - Run by using `function_name(parameters)`.
@@ -128,12 +139,12 @@ def add_numbers(a, b):
 add_numbers(1, 4)
 ```
 
-## [Variable Scope](episodes/10-scope.md)
+## [Variable Scope](episodes/11-scope.md)
 
 - A local variable is defined in a function and can only be seen and used within that function.
 - A global variable is defined outside of a function and can be seen or used anywhere after definition.
 
-## [Programming Style](episodes/11-style.md)
+## [Programming Style](episodes/12-style.md)
 
 - Document your code.
 - Use clear and meaningful variable names.
