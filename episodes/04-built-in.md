@@ -165,6 +165,72 @@ HELLO WORLD
 True
 ```
 
+:::::::::::::::::::::::::::::::::::::::  challenge
+
+## More built-in string functions!
+
+Strings are very common value types, and we will be using them constantly. In particular, when
+reading files, everything is mostly assumed to be a string until defined otherwise. Have a look at
+the [string methods](https://www.w3schools.com/python/python_strings_methods.asp). Which of those
+methods might be useful to us?
+
+:::::::::::::::  solution
+
+## Solution
+
+All of the methods have a reason for existing, and they are very useful in their context. However,
+for our immediate future, there are a couple that could make our life much easier if they are on our
+short-term memory (or cheat sheet!):
+
+- [startswith()](https://www.w3schools.com/python/ref_string_startswith.asp),
+  [endswith()](https://www.w3schools.com/python/ref_string_endswith.asp), and
+  [find()](https://www.w3schools.com/python/ref_string_find.asp) are all very good at locating
+  words or letters within bigger strings. One use example: we are scanning the rows of a file and
+  looking for all rows that start with a special symbol.
+- [count()](https://www.w3schools.com/python/ref_string_count.asp): finds and counts all occurrences
+  of a word/letter within a bigger string.
+- [replace()](https://www.w3schools.com/python/ref_string_replace.asp): given a string, replace all
+  occurrences of a letter/word with another letter/word.
+- [lstrip()](https://www.w3schools.com/python/ref_string_lstrip.asp),
+  [rstrip()](https://www.w3schools.com/python/ref_string_rstrip.asp), and plain
+  [strip()](https://www.w3schools.com/python/ref_string_strip.asp) are great for removing whitespace
+  characters (like newlines) at the beginning/end of strings. This is very useful when reading text
+  files.
+- [split()](https://www.w3schools.com/python/ref_string_split.asp): if a string (e.g. a line of a
+  text file) has some sort of delimiter (e.g. the comma in the row of a CSV file), we can use this
+  function to break up the string into the chunks indicated by the delimiter.
+
+
+:::::::::::::::::::::::::
+
+::::::::::::::::::::::::::::::::::::::::::::::::::
+
+
+:::::::::::::::::::::::::::::::::::::::  challenge
+
+## Practice!
+
+Using just string built-in methods, solve the Rosalind exercises
+[DNA](https://rosalind.info/problems/dna/) and [RNA](https://rosalind.info/problems/rna/)!
+
+::::::::::::::::::::::::::::::::::::::::::::::::::
+
+
+:::::::::::::::::::::::::::::::::::::::  challenge
+
+## GC content
+
+The GC content of a DNA string is the percentage of guanine or cytosine in the sequence, and it is a
+useful indicator of sequence origin (e.g. bacterial sequences often have much higher GC content than
+metazoan ones). Calculate the GC content of the following sequence:
+
+```python
+dna = "CCACCCTCGTGGTATGGCTAGGCATTCAGGAACCGGAGAACGCTTCAGACCAGCCCGGACTGGGAACCTGCGGGCAGTAGGTGGAAT"
+```
+
+::::::::::::::::::::::::::::::::::::::::::::::::::
+
+
 ## Use the built-in function `help` to get help for a function
 
 - Every built-in function has online documentation.

@@ -513,7 +513,7 @@ print(a_complex_number.imag)
 
 Complete the following W3Schools exercises:
 - [Numbers](https://www.w3schools.com/python/exercise.asp?x=xrcise_numbers1)
-- [Casting](https://www.w3schools.com/python/python_casting.asp)
+- [Casting](https://www.w3schools.com/python/exercise.asp?x=xrcise_casting1)
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
 

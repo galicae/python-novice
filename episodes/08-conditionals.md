@@ -397,6 +397,90 @@ print(smallest, largest)
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
 
+:::::::::::::::::::::::::::::::::::::::  challenge
+
+## Conditions and Loops
+
+Solve the Rosalind exercise [INI4](https://rosalind.info/problems/ini4/).
+
+::::::::::::::::::::::::::::::::::::::::::::::::::
+
+:::::::::::::::::::::::::::::::::::::::  challenge
+
+## Practice!
+
+We previously solved the [RNA](https://rosalind.info/problems/rna/) Rosalind exercise using string
+built-ins. Can we also solve it with a loop and conditionals?
+
+::::::::::::::::::::::::::::::::::::::::::::::::::
+
+:::::::::::::::::::::::::::::::::::::::  challenge
+
+## Complementing a strand of DNA
+
+Solve the Rosalind exercise [REVC](https://rosalind.info/problems/revc/).
+
+:::::::::::::::  solution
+
+## Hint 1
+
+The problem has two components - reversing, and complementing. Try solving them one by one!
+
+
+:::::::::::::::::::::::::
+
+:::::::::::::::  solution
+
+## Hint 2
+
+Reversing can be achieved as a special case of slicing.
+
+
+:::::::::::::::::::::::::
+
+:::::::::::::::  solution
+
+## Hint 3
+
+Given a base `X`, make a flowchart of complementation rules. Try to translate that to code!
+
+
+:::::::::::::::::::::::::
+
+:::::::::::::::  solution
+
+## Hint 4
+
+How could we apply the complementation rules to all positions of a sequence? Does this sound like a
+repetition of the same task? What does Python use to handle repetitions _of the same task_?
+
+
+:::::::::::::::::::::::::
+
+::::::::::::::::::::::::::::::::::::::::::::::::::
+
+
+
+:::::::::::::::::::::::::::::::::::::::  challenge
+
+## Complementing a strand of DNA #2
+
+Solve the Rosalind exercise [REVC](https://rosalind.info/problems/revc/), this time without loops;
+it should be possible through creative use of string built-in methods.
+
+:::::::::::::::  solution
+
+## Hint
+
+You probably want to use `replace()` - that is a good instinct! However, if we use `replace()`
+sequentially, we have to be careful to not introduce characters that we will be `replace()`ing in
+the future. How can we avoid this?
+
+
+:::::::::::::::::::::::::
+
+::::::::::::::::::::::::::::::::::::::::::::::::::
+
 :::::::::::::::::::::::::::::::::::::::: keypoints
 
 - Use `if` statements to control whether or not a block of code is executed.
