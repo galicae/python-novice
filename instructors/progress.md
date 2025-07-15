@@ -13,3 +13,5 @@ This is an internal document meant to help me keep track of changes I am making.
 | 2025-08-10 | backend | cleaned up all R/Rstudio from my computer and swapped to conda; now it works like a charm. `sandpaper::serve()` now works as expected. |
 | 2025-08-14 | episodes | renaming episodes |
 | 2025-08-14 | profiles | summarising pre-course questionnaires for learner profile. |
+| 2025-08-14 | episodes | Adding Rosalind/W3Schools exercises to early episodes - variables, types, lists. |
+| 2025-08-15 | episodes | Wrote dictionaries episode, loosely based on lists and Toby Hodges' entry in the ITPP course. |
