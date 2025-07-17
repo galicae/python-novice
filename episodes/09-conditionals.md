@@ -407,6 +407,19 @@ Solve the Rosalind exercise [INI4](https://rosalind.info/problems/ini4/).
 
 :::::::::::::::::::::::::::::::::::::::  challenge
 
+## Slicing or loops?
+
+Oftentimes, the solution to a problem is to keep certain elements from a sequence. If these
+elements are regular (e.g. every second/third/tenth element) then slicing can be enough.
+If the selection criteria are more complex though (e.g. each word that starts with the
+letter "F") then a for-loop is needed. Try to solve the
+[INI5](https://rosalind.info/problems/ini5/) Rosalind exercise using a for-loop and list
+slicing.
+
+::::::::::::::::::::::::::::::::::::::::::::::::::
+
+:::::::::::::::::::::::::::::::::::::::  challenge
+
 ## Practice!
 
 We previously solved the [RNA](https://rosalind.info/problems/rna/) Rosalind exercise using string

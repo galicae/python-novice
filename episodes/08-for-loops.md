@@ -453,6 +453,14 @@ print('My favorite season is ', seasons[3])
 
 :::::::::::::::::::::::::::::::::::::::  challenge
 
+Solve the Rosalind exercise on dictionaries [INI6](https://rosalind.info/problems/ini6/). This
+demonstrates a very common pattern for the use of dictionaries: when we want to keep track of
+multiple _named_ entities, the way to organize that often comes in the form of a dictionary.
+
+::::::::::::::::::::::::::::::::::::::::::::::::::
+
+:::::::::::::::::::::::::::::::::::::::  challenge
+
 ## All roads lead to Rome
 
 We previously solved the [DNA](https://rosalind.info/problems/dna/) exercise using string built-in
