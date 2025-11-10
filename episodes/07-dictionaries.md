@@ -135,7 +135,7 @@ student_numbers is now: {'Bioscience Technology': 2, 'Computational Biology': 12
 The same effect can be achieved with the `update()` function:
 
 ```python
-student_numbers.update({'Maths in the Living Environment'}: 120)
+student_numbers.update({'Maths in the Living Environment': 120})
 print('student_numbers is now:', student_numbers)
 ```
 
