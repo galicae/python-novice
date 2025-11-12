@@ -468,32 +468,6 @@ methods. Can we also solve it using a loop?
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
 
-:::::::::::::::::::::::::::::::::::::::  challenge
-
-## Counting point mutations
-
-Solve the Rosalind exercise [HAMM](https://rosalind.info/problems/hamm/).
-
-:::::::::::::::  solution
-
-## Solution
-
-By looping over both strings at once, we can count mismatches:
-
-```python
-a = "string1"
-b = "string2"
-n = len(a)
-no_mismatches = 0
-for i in range(n):
-    if a[i] != b[i]:
-        no_mismatches += 1
-print(no_mismatches)
-```
-
-:::::::::::::::::::::::::
-
-::::::::::::::::::::::::::::::::::::::::::::::::::
 
 :::::::::::::::::::::::::::::::::::::::: keypoints
 
