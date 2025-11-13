@@ -96,9 +96,6 @@ print_date(month=3, day=19, year=1871)
 1871/3/19
 ```
 
-- Via [Twitter](https://twitter.com/minisciencegirl/status/693486088963272705):
-  `()` contains the ingredients for the function
-  while the body contains the recipe.
 
 ## Functions may return a result to their caller using `return`
 
