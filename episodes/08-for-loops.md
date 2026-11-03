@@ -194,24 +194,24 @@ Create a table showing the numbers of the lines that are executed when this prog
 and the values of the variables after each line is executed.
 
 ```python
-total = 0
-for char in "tin":
-    total = total + 1
+total = 0                 # Line 1 
+for char in "tin":        # Line 2 
+    total = total + 1     # Line 3
 ```
 
 :::::::::::::::  solution
 
 ## Solution
 
-| Line no | Variables            | 
-| ------- | -------------------- |
-| 1       | total = 0            | 
-| 2       | total = 0 char = 't' | 
-| 3       | total = 1 char = 't' | 
-| 2       | total = 1 char = 'i' | 
-| 3       | total = 2 char = 'i' | 
-| 2       | total = 2 char = 'n' | 
-| 3       | total = 3 char = 'n' | 
+| Step no | Line no | Variables            | 
+| ------- | ------- | -------------------- |
+| 1       | 1       | total = 0            | 
+| 2       | 2       | total = 0 char = 't' | 
+| 3       | 3       | total = 1 char = 't' | 
+| 4       | 2       | total = 1 char = 'i' | 
+| 5       | 3       | total = 2 char = 'i' | 
+| 6       | 2       | total = 2 char = 'n' | 
+| 7       | 3       | total = 3 char = 'n' | 
 
 :::::::::::::::::::::::::
 
