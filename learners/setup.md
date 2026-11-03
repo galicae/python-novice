@@ -13,3 +13,4 @@ practice can be obtained in other parts of the internet. Please register an acco
 [Rosalind](https://rosalind.info/problems/list-view/?location=python-village). You may consider
 registering on [W3Schools](https://www.w3schools.com/), if you want to track your progress there as
 well.
+
